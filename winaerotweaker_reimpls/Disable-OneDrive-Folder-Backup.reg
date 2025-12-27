@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+; Disable OneDrive User Folder Backup
+; Prevents OneDrive from automatically backing up Desktop, Documents, and Pictures folders
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\OneDrive]
+"KFMBlockOptIn"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive]
+"DisableFileSyncNGSC"=dword:00000001

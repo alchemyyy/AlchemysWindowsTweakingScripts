@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+; Enable Linked Connections
+; Makes mapped network drives available in elevated applications
+; Useful when running programs as administrator that need access to network drives
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableLinkedConnections"=dword:00000001

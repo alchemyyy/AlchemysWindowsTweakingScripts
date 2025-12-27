@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+; Disable Microsoft Edge Desktop Shortcut Creation
+; Prevents Edge from creating desktop shortcuts after updates
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EdgeUpdate]
+"CreateDesktopShortcutDefault"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"DisableEdgeDesktopShortcutCreation"=dword:00000001

@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; Wallpaper Quality 100%
+; Prevents Windows from compressing JPEG wallpapers, maintaining full quality
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"JPEGImportQuality"=dword:00000064
