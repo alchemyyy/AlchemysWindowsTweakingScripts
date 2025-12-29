@@ -1,7 +1,7 @@
 Windows Registry Editor Version 5.00
 
-; Adds "Empty Recycle Bin" to Windows 11 desktop context menu
-; Right-click desktop > Show more options > Empty Recycle Bin
+; Adds "Empty Recycle Bin" to desktop context menu (under "Show more options" in Windows 11)
+; Uses conhost --headless for completely hidden execution - no window flash
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\EmptyRecycleBin]
 @="Empty Recycle Bin"
@@ -9,4 +9,4 @@ Windows Registry Editor Version 5.00
 "Position"="Bottom"
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\EmptyRecycleBin\command]
-@="PowerShell.exe -WindowStyle Hidden -Command \"Clear-RecycleBin -Force -ErrorAction SilentlyContinue\""
+@="conhost.exe --headless powershell.exe -NoProfile -Command Clear-RecycleBin -Force"
