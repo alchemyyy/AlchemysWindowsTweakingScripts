@@ -116,16 +116,6 @@ echo Done! Office items removed from context menu.
 echo ================================================
 echo.
 echo NOTE: Backups were created with "-backup" suffix.
-echo You may need to restart Explorer or log out to see changes.
-echo.
-echo To restart Explorer now, press Y. Otherwise press N.
-choice /c YN /n /m "Restart Explorer? (Y/N): "
-if %errorlevel% equ 1 (
-    echo Restarting Explorer...
-    taskkill /f /im explorer.exe >nul 2>&1
-    start explorer.exe
-    echo Explorer restarted.
-)
-
+echo You may need to log out or restart to see changes.
 echo.
 pause

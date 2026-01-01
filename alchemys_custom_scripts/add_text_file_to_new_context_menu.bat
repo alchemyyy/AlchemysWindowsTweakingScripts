@@ -20,11 +20,7 @@ reg add "HKEY_CLASSES_ROOT\.txt\ShellNew" /v "ItemName" /t REG_EXPAND_SZ /d "@%%
 echo.
 echo Registry entries have been added.
 echo.
-echo Restarting Windows Explorer...
-taskkill /f /im explorer.exe
-start explorer.exe
-
-echo.
 echo Done! The "New Text Document" option should now appear in your right-click menu.
 echo If it doesn't appear immediately, try logging off and back on.
+echo.
 pause

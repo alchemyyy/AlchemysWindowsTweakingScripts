@@ -1,8 +1,0 @@
-Windows Registry Editor Version 5.00
-
-; Disable Jump Lists
-; Disables recent files and frequent folders in taskbar and Start menu jump lists
-
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"Start_TrackDocs"=dword:00000000
-"Start_TrackProgs"=dword:00000000

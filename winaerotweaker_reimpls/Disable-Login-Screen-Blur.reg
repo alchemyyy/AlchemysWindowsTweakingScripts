@@ -1,7 +1,0 @@
-Windows Registry Editor Version 5.00
-
-; Disable Login Screen Blur
-; Removes the acrylic blur effect on the sign-in screen background
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
-"DisableAcrylicBackgroundOnLogon"=dword:00000001

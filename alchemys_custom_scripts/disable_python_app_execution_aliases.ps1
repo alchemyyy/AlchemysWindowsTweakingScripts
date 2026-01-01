@@ -1,5 +1,4 @@
 # PowerShell script to disable Python app execution aliases in Windows 11
-# This script will restart Explorer to release file locks
 
 Write-Host "Disabling Python app execution aliases..." -ForegroundColor Cyan
 Write-Host ""
@@ -12,19 +11,6 @@ if (-not $isAdmin) {
     Write-Host "Please run PowerShell as Administrator and try again." -ForegroundColor Yellow
     exit 1
 }
-
-# Function to restart Explorer
-function Restart-Explorer {
-    Write-Host "Stopping Windows Explorer..." -ForegroundColor Yellow
-    Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue
-    Start-Sleep -Seconds 2
-    Write-Host "Starting Windows Explorer..." -ForegroundColor Yellow
-    Start-Process explorer.exe
-    Start-Sleep -Seconds 2
-}
-
-# Restart Explorer to release file locks
-Restart-Explorer
 
 # Disable via renaming the alias files
 $appxPath = "$env:LOCALAPPDATA\Microsoft\WindowsApps"
