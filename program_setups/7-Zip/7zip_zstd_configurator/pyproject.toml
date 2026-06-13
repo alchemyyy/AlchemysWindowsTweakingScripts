@@ -1,0 +1,16 @@
+[project]
+name = "7zip-zstd-configurator"
+version = "0.1.0"
+description = "Apply preferred 7-Zip Zstandard settings and file associations."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+7zip-zstd-configurator = "configure_7zip_zs:main"
+
+[tool.setuptools]
+py-modules = ["configure_7zip_zs"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+; Source: https://winaero.com/how-to-show-or-hide-windows-defender-tray-icon-in-windows-10/
+; Older Winaero registry method: remove Run values named "Windows Defender".
+; Modern Winaero instructions use Task Manager Startup instead.
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"Windows Defender"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"Windows Defender"=-

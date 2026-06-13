@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; --- Right-click on a folder -> "Open with Sublime Text" ---
+[HKEY_CLASSES_ROOT\Directory\shell\OpenWithSublimeText]
+@="Open with Sublime Text"
+"Icon"="\"C:\\Program Files\\Sublime Text\\sublime_text.exe\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenWithSublimeText\command]
+@="\"C:\\Program Files\\Sublime Text\\sublime_text.exe\" \"%V\""
+
+; --- Right-click on folder background (whitespace) -> "Open with Sublime Text" ---
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWithSublimeText]
+@="Open with Sublime Text"
+"Icon"="\"C:\\Program Files\\Sublime Text\\sublime_text.exe\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWithSublimeText\command]
+@="\"C:\\Program Files\\Sublime Text\\sublime_text.exe\" \"%V\""

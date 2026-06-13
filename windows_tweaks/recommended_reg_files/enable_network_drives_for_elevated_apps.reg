@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; Source: https://winaero.com/enable-the-access-to-network-drives-from-elevated-apps-running-as-administrator/
+; INI tweak: pageLinkedConnections=1
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableLinkedConnections"=dword:00000001

@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Open Containing Folder",
+        "command": "open_dir",
+        "args": {
+            "dir": "$file_path",
+            "file": "$file"
+        }
+    }
+]

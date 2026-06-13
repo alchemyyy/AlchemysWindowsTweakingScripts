@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; Source: https://winaero.com/disable-look-for-an-app-in-the-store-in-windows-10-and-windows-8/
+; INI tweak: pageDisableLookInStore=1
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Explorer]
+"NoUseStoreOpenWith"=dword:00000001

@@ -1,0 +1,20 @@
+[project]
+name = "7zip-zstd-iconpatcher"
+version = "0.1.0"
+description = "Patch installed 7-Zip Zstandard icon resources in-place."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+7zip-zstd-iconpatcher = "7zip_zstd_iconpatcher.__main__:main"
+
+[tool.setuptools]
+packages = ["7zip_zstd_iconpatcher"]
+package-dir = { "7zip_zstd_iconpatcher" = "." }
+
+[tool.setuptools.package-data]
+7zip_zstd_iconpatcher = ["assets/*.ico"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

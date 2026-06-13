@@ -1,0 +1,42 @@
+# CMD Aliases Configuration
+# Format: alias_name=command
+# Lines starting with # are comments
+# Blank lines are ignored
+
+# === CUSTOM ===
+delnul=del "\\?\%CD%\nul"
+gcr=git clone --recursive $*
+
+# === DIRECTORY LISTING ===
+ls=dir /b $*
+ll=dir $*
+la=dir /a $*
+lt=dir /od $*
+
+# === NAVIGATION ===
+..=cd ..
+...=cd ..\..\
+....=cd ..\..\..\
+~=cd %USERPROFILE%
+home=cd %USERPROFILE%
+
+# === FILE OPERATIONS ===
+cat=type $*
+cp=copy $*
+mv=move $*
+rm=del $*
+rmdir=rd /s /q $*
+touch=copy nul $1
+
+# === SYSTEM ===
+clear=cls
+pwd=cd
+ps=tasklist $*
+kill=taskkill /PID $*
+killall=taskkill /f /im $*
+grep=findstr /i $*
+man=help $*
+history=doskey /history
+which=where $*
+ifconfig=ipconfig $*
+alias=doskey /macros

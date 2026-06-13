@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+; Enables icons in the 7-Zip ZS Explorer context menu.
+; The cascaded "7-Zip ZS" root menu item is created dynamically by the
+; shell extension, and it only receives its menu bitmap when MenuIcons is 1.
+
+[HKEY_CURRENT_USER\Software\7-Zip-Zstandard\Options]
+"MenuIcons"=dword:00000001
+"CascadedMenu"=dword:00000001

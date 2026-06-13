@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; Source: https://winaero.com/disable-search-history-file-explorer/
+; INI tweak: pageDisableSearchHistory=1
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
