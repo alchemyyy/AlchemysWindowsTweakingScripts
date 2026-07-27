@@ -8,5 +8,5 @@ if not "%errorlevel%"=="0" (
 )
 
 cd /d "%~dp0"
-python "%~dp0windhawk_bar.py" restore "%~dp0WindhawkBARResult.zip" --standard --install-windhawk-if-missing
+python "%~dp0windhawk_bar.py" restore "%~dp0alchemys_windhawk_settings.json" --standard --json-only --install-windhawk-if-missing
 pause
