@@ -1,0 +1,467 @@
+{
+  "format": "windhawk-user-data-v1",
+  "appSettings": {
+    "language": "en",
+    "theme": "dark",
+    "disableUpdateCheck": false,
+    "devModeOptOut": false,
+    "hideTrayIcon": false,
+    "alwaysCompileModsLocally": false,
+    "dontAutoShowToolkit": false,
+    "modTasksDialogDelay": 2000,
+    "loggingVerbosity": 0,
+    "engine": {
+      "loggingVerbosity": 0,
+      "include": [],
+      "exclude": [],
+      "injectIntoCriticalProcesses": false,
+      "injectIntoIncompatiblePrograms": false,
+      "injectIntoGames": false
+    }
+  },
+  "mods": [
+    {
+      "modId": "context-menu-preloader",
+      "version": "1.0",
+      "name": "Context Menu Preloader",
+      "settings": {
+        "StartupDelay": 5,
+        "CustomExtensions": "pdf; mp4; mkv; docx; obj; html",
+        "EnableDebug": 0
+      }
+    },
+    {
+      "modId": "control-panel-color-fix",
+      "version": "1.0.1",
+      "name": "Control Panel Color Fix",
+      "settings": {
+        "contrastEnabled": 1,
+        "contrastOffset": 22,
+        "useManualRGB": 0,
+        "manualRGB": "54,54,54"
+      }
+    },
+    {
+      "modId": "dark-menus",
+      "version": "1.4.2",
+      "name": "Dark mode context menus",
+      "settings": {
+        "AppMode": "ForceDark",
+        "TranslucentFlyoutsFix": 0
+      }
+    },
+    {
+      "modId": "disable-feedback-hub-hotkey",
+      "version": "1.0.0",
+      "name": "Disable Feedback Hub Hotkey"
+    },
+    {
+      "modId": "disable-tray-icons",
+      "version": "1.0.0",
+      "name": "Disable Tray Icons",
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "extension-change-no-warning",
+      "version": "1.0.1",
+      "name": "Turn off change file extension warning"
+    },
+    {
+      "modId": "file-explorer-remove-suffixes",
+      "version": "1.1.1",
+      "name": "Remove Taskbar Window Suffixes",
+      "settings": {
+        "suffixRemovalMode": "fileExplorerOnly",
+        "suffixRules[0].processIdentifier": "",
+        "suffixRules[0].search": "",
+        "suffixRules[0].replace": ""
+      }
+    },
+    {
+      "modId": "fix-explorer-white-flash",
+      "version": "1.4",
+      "name": "Fix white flashes in explorer"
+    },
+    {
+      "modId": "instant-taskbar-thumbnail-previews",
+      "version": "1.0.0",
+      "name": "Instant Taskbar Thumbnail Previews",
+      "settings": {
+        "delayMs": 1,
+        "closeDelayMs": 1,
+        "closeOnOutsideClick": 0,
+        "closeOnStartButtonHover": 0
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "invisible-borders",
+      "version": "1.0.0",
+      "name": "Invisible Window Borders",
+      "settings": {
+        "SpecialWindows": 0
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "modernize-folder-picker-dialog",
+      "version": "1.0.0",
+      "name": "Modernize Folder Picker Dialog"
+    },
+    {
+      "modId": "remove-ms-store-open-with",
+      "version": "1.0.0",
+      "name": "Open With - Remove Microsoft Store Menu Item"
+    },
+    {
+      "modId": "start-menu-open-real-file-location",
+      "version": "1.0.0",
+      "name": "Start Menu Open Real File Location",
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "start-menu-size",
+      "version": "1.1",
+      "name": "Start Menu Size",
+      "settings": {
+        "width": 0,
+        "height": 0,
+        "searchWidth": 0,
+        "searchHeight": 0
+      }
+    },
+    {
+      "modId": "start-search-bing-redirector",
+      "version": "1.0.0",
+      "name": "Start Search Bing Redirector",
+      "settings": {
+        "engine": "google",
+        "customTemplate": "https://www.google.com/search?q={q}"
+      }
+    },
+    {
+      "modId": "taskbar-clock-customization",
+      "version": "1.8",
+      "name": "Taskbar Clock Customization",
+      "settings": {
+        "ShowSeconds": 1,
+        "TimeFormat": "h':'mm tt",
+        "DateFormat": "M/d/yyyy",
+        "DateLocale": "",
+        "WeekdayFormat": "dddd",
+        "WeekdayFormatCustom": "Sun, Mon, Tue, Wed, Thu, Fri, Sat",
+        "TopLine": "%time%",
+        "BottomLine": "%date%",
+        "MiddleLine": "",
+        "TooltipLine": "",
+        "TooltipLineMode": "append",
+        "Width": 180,
+        "Height": 60,
+        "MaxWidth": 0,
+        "TextSpacing": 0,
+        "DataCollection.NetworkMetricsFormat": "mbs",
+        "DataCollection.NetworkMetricsFixedDecimals": -1,
+        "DataCollection.DiskMetricsFormat": "sameAsNetwork",
+        "DataCollection.DiskMetricsFixedDecimals": -1,
+        "DataCollection.PercentageFormat": "spacePaddingAndSymbol",
+        "DataCollection.UpdateInterval": 1,
+        "DataCollection.NetworkAdapterName": "",
+        "DataCollection.GpuAdapterName": "",
+        "MediaPlayer.IgnoredPlayers[0]": "",
+        "MediaPlayer.MaxLength": 28,
+        "MediaPlayer.MediaInfoFormat": "%media_artist% - %media_title%",
+        "MediaPlayer.NoMediaText": "No media",
+        "MediaPlayer.RemoveBrackets": 0,
+        "WebContentWeatherLocation": "",
+        "WebContentWeatherFormat": "%c 🌡️%t 🌬️%w",
+        "WebContentWeatherUnits": "autoDetect",
+        "WebContentsItems[0].Url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+        "WebContentsItems[0].BlockStart": "<item>",
+        "WebContentsItems[0].Start": "<title>",
+        "WebContentsItems[0].End": "</title>",
+        "WebContentsItems[0].ContentMode": "xmlHtml",
+        "WebContentsItems[0].SearchReplace[0].Search": "",
+        "WebContentsItems[0].SearchReplace[0].Replace": "",
+        "WebContentsItems[0].MaxLength": 28,
+        "WebContentsUpdateInterval": 10,
+        "TimeZones[0]": "Eastern Standard Time",
+        "TimeStyle.Hidden": 0,
+        "TimeStyle.TextColor": "",
+        "TimeStyle.TextAlignment": "Center",
+        "TimeStyle.FontSize": 0,
+        "TimeStyle.FontFamily": "",
+        "TimeStyle.FontWeight": "",
+        "TimeStyle.FontStyle": "",
+        "TimeStyle.FontStretch": "",
+        "TimeStyle.CharacterSpacing": 0,
+        "TimeStyle.LineHeight": 0,
+        "DateStyle.Hidden": 0,
+        "DateStyle.TextColor": "",
+        "DateStyle.TextAlignment": "",
+        "DateStyle.FontSize": 0,
+        "DateStyle.FontFamily": "",
+        "DateStyle.FontWeight": "",
+        "DateStyle.FontStyle": "",
+        "DateStyle.FontStretch": "",
+        "DateStyle.CharacterSpacing": 0,
+        "DateStyle.LineHeight": 0,
+        "oldTaskbarOnWin11": 0
+      }
+    },
+    {
+      "modId": "taskbar-disappearing-tray-icons-fix",
+      "version": "1.2",
+      "name": "Disappearing Tray Icons Fix",
+      "settings": {
+        "initialDelaySeconds": 5,
+        "passiveBroadcast": 1,
+        "intervalSeconds": 60,
+        "excludedProcesses[0]": ""
+      }
+    },
+    {
+      "modId": "taskbar-icon-size",
+      "version": "1.3.7",
+      "name": "Taskbar height and icon size",
+      "settings": {
+        "TaskbarHeight": 43,
+        "IconSize": 25,
+        "TaskbarButtonWidth": 41,
+        "IconSizeSmall": 16,
+        "TaskbarButtonWidthSmall": 32
+      }
+    },
+    {
+      "modId": "taskbar-notification-icon-spacing",
+      "version": "1.3.1",
+      "name": "Taskbar tray icon spacing and grid",
+      "settings": {
+        "notificationIconWidth": 24,
+        "notificationIconRows": 1,
+        "gridArrangement": "rowFirstLeftToRight",
+        "overflowIconWidth": 32,
+        "overflowIconsPerRow": 5
+      }
+    },
+    {
+      "modId": "taskbar-notification-icons-show-all",
+      "version": "1.0",
+      "name": "Always show all taskbar tray icons",
+      "settings": {
+        "mode": "showAll"
+      }
+    },
+    {
+      "modId": "taskbar-on-top",
+      "version": "1.1.7",
+      "name": "Taskbar on top for Windows 11",
+      "settings": {
+        "taskbarLocation": "top",
+        "taskbarLocationSecondary": "sameAsPrimary",
+        "runningIndicatorsOnTop": 0,
+        "startMenuAnimationAdjust": 0
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "taskbar-restart-explorer",
+      "version": "1.0",
+      "name": "Taskbar Restart Explorer"
+    },
+    {
+      "modId": "taskbar-start-button-corner-fix",
+      "version": "2.0",
+      "name": "Start Menu Corner Click Fix",
+      "settings": {
+        "edgeThickness": 5,
+        "edgeLength": 5,
+        "openStartWhenButtonUnavailable": 1
+      }
+    },
+    {
+      "modId": "taskbar-thumbnail-hover-fix",
+      "version": "1.0",
+      "name": "Taskbar Thumbnail Hover Fix"
+    },
+    {
+      "modId": "taskbar-thumbnail-reorder",
+      "version": "1.1.5",
+      "name": "Taskbar Thumbnail Reorder",
+      "settings": {
+        "oldTaskbarOnWin11": 0
+      }
+    },
+    {
+      "modId": "taskbar-thumbnail-size",
+      "version": "1.2.1",
+      "name": "Taskbar Thumbnail Size",
+      "settings": {
+        "size": 150,
+        "useAbsoluteSize": 1,
+        "minWidth": 180,
+        "minHeight": 120,
+        "maxWidth": 180,
+        "maxHeight": 120,
+        "preserveAspectRatio": 0
+      }
+    },
+    {
+      "modId": "taskbar-tray-system-icon-tweaks",
+      "version": "1.3",
+      "name": "Taskbar tray system icon tweaks",
+      "settings": {
+        "hideVolumeIcon": 1,
+        "hideNetworkIcon": 1,
+        "hideBatteryIcon": 1,
+        "grayscaleBatteryIcon": 0,
+        "hideMicrophoneIcon": 1,
+        "hideGeolocationIcon": 1,
+        "hideStudioEffectsIcon": 1,
+        "hideRecallIcon": 0,
+        "hideLanguageBar": 1,
+        "hideLanguageSupplementaryIcons": 1,
+        "hideBellIcon": "never",
+        "showDesktopButtonWidth": 12
+      }
+    },
+    {
+      "modId": "taskbar-vertical",
+      "version": "1.3.13",
+      "name": "Vertical Taskbar for Windows 11",
+      "settings": {
+        "taskbarLocation": "left",
+        "TaskbarWidth": 80,
+        "taskbarLocationSecondary": "sameAsPrimary",
+        "jumpListAlignment": "top",
+        "startMenuAlignment": "top",
+        "startMenuAnimationAdjust": 0,
+        "clockContainerHeight": 0
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "taskbar-wheel-cycle",
+      "version": "1.1.11",
+      "name": "Cycle taskbar buttons with mouse wheel",
+      "settings": {
+        "skipMinimizedWindows": 1,
+        "wrapAround": 1,
+        "reverseScrollingDirection": 0,
+        "enableMouseWheelCycling": 1,
+        "customScrollRegions": "",
+        "cycleLeftKeyboardShortcut": "Alt+VK_OEM_4",
+        "cycleRightKeyboardShortcut": "Alt+VK_OEM_6",
+        "oldTaskbarOnWin11": 0
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "taskmgr-link-speed",
+      "version": "1.0.0",
+      "name": "Task Manager Show Link Speed",
+      "settings": {
+        "CustomLabelOverrideEnabled": 0,
+        "CustomLabelOverrideText": ""
+      }
+    },
+    {
+      "modId": "windows-11-file-explorer-styler",
+      "version": "1.5",
+      "name": "Windows 11 File Explorer Styler",
+      "settings": {
+        "theme": "",
+        "backgroundTranslucentEffect": "",
+        "backgroundTranslucentEffectRegion": "",
+        "styleConstants[0]": "",
+        "controlStyles[0].target": "Microsoft.UI.Xaml.Controls.AppBarButton#backButton",
+        "controlStyles[0].styles[0]": "Margin=0,8,0,0",
+        "controlStyles[0].styles[1]": "Width=37",
+        "controlStyles[1].target": "Microsoft.UI.Xaml.Controls.AppBarButton#forwardButton",
+        "controlStyles[1].styles[0]": "Margin=0,8,0,0",
+        "controlStyles[1].styles[1]": "Width=37",
+        "controlStyles[2].target": "Microsoft.UI.Xaml.Controls.AppBarButton#upButton",
+        "controlStyles[2].styles[0]": "Margin=0,8,0,0",
+        "controlStyles[2].styles[1]": "Width=37",
+        "controlStyles[3].target": "Microsoft.UI.Xaml.Controls.AppBarButton#refreshButton",
+        "controlStyles[3].styles[0]": "Margin=0,8,0,0",
+        "controlStyles[3].styles[1]": "Width=37",
+        "themeResourceVariables[0]": "",
+        "explorerFrameContainerHeight": 0,
+        "xamlDiagnosticsHandling": "alert"
+      }
+    },
+    {
+      "modId": "windows-11-start-menu-styler",
+      "version": "1.6",
+      "name": "Windows 11 Start Menu Styler",
+      "settings": {
+        "theme": "Windows11_Metro10",
+        "disableNewStartMenuLayout": "0",
+        "styleConstants[0]": "",
+        "controlStyles[0].target": "",
+        "controlStyles[0].styles[0]": "",
+        "themeResourceVariables[0]": "",
+        "webContentStyles[0].target": "",
+        "webContentStyles[0].styles[0]": "",
+        "webContentCustomJs": ""
+      }
+    },
+    {
+      "modId": "windows-11-taskbar-styler",
+      "version": "1.8",
+      "name": "Windows 11 Taskbar Styler",
+      "settings": {
+        "theme": "",
+        "styleConstants[0]": "",
+        "controlStyles[0].target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Border#BackgroundElement",
+        "controlStyles[0].styles[0]": "Background:=<ImageBrush Stretch=\"Uniform\" ImageSource=\"file:///C:/Windows/OrbWin10.png\" />",
+        "controlStyles[1].target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer#Icon",
+        "controlStyles[1].styles[0]": "Visibility=Collapsed",
+        "themeResourceVariables[0]": "",
+        "clickThroughTaskbar": 0,
+        "xamlDiagnosticsHandling": "alert"
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "local@instant-taskbar-thumbnail-previews",
+      "isLocal": true,
+      "version": "1.1.0",
+      "name": "Instant Taskbar Thumbnail Previews",
+      "source": "// ==WindhawkMod==\r\n// @id              instant-taskbar-thumbnail-previews\r\n// @name            Instant Taskbar Thumbnail Previews\r\n// @description     Controls taskbar thumbnail preview show and close behavior.\r\n// @version         1.1.0\r\n// @author          Alchemy\r\n// @github          https://github.com/alchemyyy\r\n// @license         MIT\r\n// @include         explorer.exe\r\n// @architecture    x86-64\r\n// @compilerOptions -lole32 -loleaut32 -lruntimeobject\r\n// ==/WindhawkMod==\r\n\r\n// ==WindhawkModReadme==\r\n/*\r\n# Instant Taskbar Thumbnail Previews\r\n\r\nAdds the ability to configure or remove the delays before Windows 11 shows and closes taskbar thumbnail previews,\r\nas well as the ability to configure mouse actions that close them.\r\n\r\nThe hover and close delay settings replace the corresponding Windows value, so they can make the transitions either shorter or longer than the stock delays.\r\n\r\nThe close-button delay keeps the remaining thumbnail previews open after a window is closed from its thumbnail,\r\ngiving the pointer time to reach another preview before the flyout closes.\r\n\r\nThe optional outside-click behavior arms the taskbar's native light-dismiss action while a thumbnail flyout is open.\r\n\r\nThe optional Start-button hover behavior closes an open thumbnail flyout directly from the Start button's XAML pointer-enter handler.\r\n\r\nThis mod targets the new Windows 11 taskbar used by Windows 11 24H2 and later.\r\n\r\n*/\r\n// ==/WindhawkModReadme==\r\n\r\n// ==WindhawkModSettings==\r\n/*\r\n- delayMs: 1\r\n  $name: Thumbnail hover delay\r\n  $description: Exact delay in milliseconds. The minimum value is 1, which is effectively immediate.\r\n- closeDelayMs: 1\r\n  $name: Thumbnail close delay\r\n  $description: Exact delay after the pointer leaves the thumbnail area. The minimum value is 1, which is effectively immediate.\r\n- closeButtonDelayMs: 500\r\n  $name: Delay after closing a thumbnail\r\n  $description: Exact delay before the remaining thumbnail previews close after a window is closed with a thumbnail close button. The minimum value is 1, which is effectively immediate.\r\n- closeOnOutsideClick: false\r\n  $name: Close on outside click\r\n  $description: Immediately close open thumbnail previews when clicking outside the taskbar and thumbnail surface.\r\n- closeOnStartButtonHover: false\r\n  $name: Close on Start button hover\r\n  $description: Immediately close open thumbnail previews when hovering over the Start button.\r\n*/\r\n// ==/WindhawkModSettings==\r\n\r\n#include <windhawk_utils.h>\r\n\r\n#include <windows.h>\r\n\r\n#include <atomic>\r\n#include <unordered_set>\r\n\r\n#undef GetCurrentTime\r\n\r\n#include <winrt/Windows.UI.Xaml.Automation.h>\r\n#include <winrt/Windows.UI.Xaml.h>\r\n\r\n#define MINIMUM_DELAY_MS 1\r\n#define DEFAULT_CLOSE_BUTTON_DELAY_MS 500\r\n#define TIME_SPAN_TICKS_PER_MILLISECOND 10000LL\r\n\r\nnamespace {\r\n\r\nstd::atomic<LONGLONG> g_hoverDelayTimeSpan{\r\n    MINIMUM_DELAY_MS * TIME_SPAN_TICKS_PER_MILLISECOND};\r\nstd::atomic<UINT> g_closeDelayMilliseconds{MINIMUM_DELAY_MS};\r\nstd::atomic<UINT> g_closeButtonDelayMilliseconds{\r\n    DEFAULT_CLOSE_BUTTON_DELAY_MS};\r\nstd::atomic<bool> g_closeOnOutsideClick{false};\r\nstd::atomic<bool> g_closeOnStartButtonHover{false};\r\nstd::atomic<bool> g_taskbarHooksQueued{false};\r\nstd::atomic<bool> g_taskbarViewHooksQueued{false};\r\nstd::atomic<bool> g_initialized{false};\r\nstd::atomic<bool> g_windowsLightDismissTrackingReliable{true};\r\nSRWLOCK g_windowsLightDismissTaskbarHostsLock = SRWLOCK_INIT;\r\nstd::unordered_set<void*> g_windowsLightDismissTaskbarHosts;\r\nenum class DismissDelaySource {\r\n    none,\r\n    pointerExit,\r\n    thumbnailCloseButton,\r\n};\r\n\r\nthread_local DismissDelaySource g_dismissDelaySource =\r\n    DismissDelaySource::none;\r\nthread_local bool g_thumbnailCloseButtonDelayPending = false;\r\nthread_local HWND g_activeTaskbarWindow = nullptr;\r\nthread_local bool g_previewLightDismissArmed = false;\r\nthread_local HWND g_previewLightDismissTaskbarWindow = nullptr;\r\nthread_local UINT_PTR g_previewLightDismissRearmTimer = 0;\r\nthread_local void* g_activeHoverFlyoutController = nullptr;\r\nthread_local void* g_pointerOverFlyoutFrameModel = nullptr;\r\nthread_local void* g_lastUnregisteredTaskbarHost = nullptr;\r\n\r\nvoid* CTaskBand_ITaskListWndSite_Vftable;\r\nvoid* CSecondaryTaskBand_ITaskListWndSite_Vftable;\r\n\r\nusing CTaskBandGetTaskbarHost_t =\r\n    void*(WINAPI*)(void* object, void** taskbarHostSharedPointer);\r\nCTaskBandGetTaskbarHost_t CTaskBandGetTaskbarHost_Original;\r\nCTaskBandGetTaskbarHost_t CSecondaryTaskBandGetTaskbarHost_Original;\r\n\r\nusing ReferenceCountBaseDecrement_t = void(WINAPI*)(void* object);\r\nReferenceCountBaseDecrement_t ReferenceCountBaseDecrement_Original;\r\n\r\nusing TaskbarHostRegisterLightDismiss_t = void(WINAPI*)(void* object);\r\nTaskbarHostRegisterLightDismiss_t TaskbarHostRegisterLightDismiss_Original;\r\n\r\nusing TaskbarHostUnregisterLightDismiss_t = void(WINAPI*)(void* object);\r\nTaskbarHostUnregisterLightDismiss_t TaskbarHostUnregisterLightDismiss_Original;\r\n\r\nusing TaskbarControllerOnLightDismissTriggered_t = void(WINAPI*)(\r\n    void* object,\r\n    const void* taskbarModel,\r\n    const void* eventArguments);\r\nTaskbarControllerOnLightDismissTriggered_t\r\n    TaskbarControllerOnLightDismissTriggered_Original;\r\n\r\nconstexpr int TASK_BAND_INTERFACE_SEARCH_LIMIT = 20;\r\n\r\nenum class TaskbarWindowType {\r\n    invalid,\r\n    primary,\r\n    secondary,\r\n};\r\n\r\nTaskbarWindowType GetTaskbarWindowType(HWND taskbarWindow) {\r\n    WCHAR className[32] = {};\r\n    if (!GetClassNameW(taskbarWindow, className, ARRAYSIZE(className))) {\r\n        return TaskbarWindowType::invalid;\r\n    }\r\n\r\n    if (_wcsicmp(className, L\"Shell_TrayWnd\") == 0) {\r\n        return TaskbarWindowType::primary;\r\n    }\r\n\r\n    if (_wcsicmp(className, L\"Shell_SecondaryTrayWnd\") == 0) {\r\n        return TaskbarWindowType::secondary;\r\n    }\r\n\r\n    return TaskbarWindowType::invalid;\r\n}\r\n\r\nHWND NormalizeTaskbarWindow(HWND window) {\r\n    if (!window) {\r\n        return nullptr;\r\n    }\r\n\r\n    HWND rootWindow = GetAncestor(window, GA_ROOT);\r\n    if (!rootWindow) {\r\n        rootWindow = window;\r\n    }\r\n\r\n    if (GetTaskbarWindowType(rootWindow) ==\r\n        TaskbarWindowType::invalid) {\r\n        return nullptr;\r\n    }\r\n\r\n    DWORD processId = 0;\r\n    DWORD threadId =\r\n        GetWindowThreadProcessId(rootWindow, &processId);\r\n    if (processId != GetCurrentProcessId() ||\r\n        threadId != GetCurrentThreadId()) {\r\n        return nullptr;\r\n    }\r\n\r\n    return rootWindow;\r\n}\r\n\r\nHWND FindTaskbarWindowForCursor() {\r\n    POINT cursorPoint = {};\r\n    if (!GetCursorPos(&cursorPoint)) {\r\n        return nullptr;\r\n    }\r\n\r\n    HWND taskbarWindow =\r\n        NormalizeTaskbarWindow(WindowFromPoint(cursorPoint));\r\n    if (taskbarWindow) {\r\n        return taskbarWindow;\r\n    }\r\n\r\n    HMONITOR cursorMonitor =\r\n        MonitorFromPoint(cursorPoint, MONITOR_DEFAULTTONULL);\r\n    if (!cursorMonitor) {\r\n        return nullptr;\r\n    }\r\n\r\n    struct FIND_TASKBAR_CONTEXT {\r\n        HMONITOR monitor;\r\n        HWND taskbarWindow;\r\n    };\r\n\r\n    FIND_TASKBAR_CONTEXT context = {\r\n        cursorMonitor,\r\n        nullptr,\r\n    };\r\n    EnumThreadWindows(\r\n        GetCurrentThreadId(),\r\n        [](HWND window, LPARAM parameter) -> BOOL {\r\n            FIND_TASKBAR_CONTEXT* context =\r\n                reinterpret_cast<FIND_TASKBAR_CONTEXT*>(parameter);\r\n            if (GetTaskbarWindowType(window) !=\r\n                    TaskbarWindowType::invalid &&\r\n                MonitorFromWindow(window, MONITOR_DEFAULTTONULL) ==\r\n                    context->monitor) {\r\n                context->taskbarWindow = window;\r\n                return FALSE;\r\n            }\r\n\r\n            return TRUE;\r\n        },\r\n        reinterpret_cast<LPARAM>(&context));\r\n\r\n    return context.taskbarWindow;\r\n}\r\n\r\nclass SharedPointerControlBlockGuard {\r\n   public:\r\n    explicit SharedPointerControlBlockGuard(void* controlBlock) noexcept\r\n        : controlBlock_(controlBlock) {}\r\n\r\n    SharedPointerControlBlockGuard(\r\n        const SharedPointerControlBlockGuard&) = delete;\r\n    SharedPointerControlBlockGuard& operator=(\r\n        const SharedPointerControlBlockGuard&) = delete;\r\n\r\n    ~SharedPointerControlBlockGuard() noexcept {\r\n        if (controlBlock_ && ReferenceCountBaseDecrement_Original) {\r\n            ReferenceCountBaseDecrement_Original(controlBlock_);\r\n        }\r\n    }\r\n\r\n   private:\r\n    void* controlBlock_;\r\n};\r\n\r\ntemplate <typename Callback>\r\nbool WithTaskbarHost(HWND taskbarWindow, const Callback& callback) {\r\n    TaskbarWindowType taskbarWindowType =\r\n        GetTaskbarWindowType(taskbarWindow);\r\n    if (taskbarWindowType == TaskbarWindowType::invalid) {\r\n        return false;\r\n    }\r\n\r\n    DWORD processId = 0;\r\n    DWORD threadId =\r\n        GetWindowThreadProcessId(taskbarWindow, &processId);\r\n    if (processId != GetCurrentProcessId() ||\r\n        threadId != GetCurrentThreadId()) {\r\n        return false;\r\n    }\r\n\r\n    void* taskBandInterfaceVftable = nullptr;\r\n    CTaskBandGetTaskbarHost_t getTaskbarHost = nullptr;\r\n    HWND taskSwitchWindow = nullptr;\r\n    switch (taskbarWindowType) {\r\n        case TaskbarWindowType::primary:\r\n            taskBandInterfaceVftable =\r\n                CTaskBand_ITaskListWndSite_Vftable;\r\n            getTaskbarHost = CTaskBandGetTaskbarHost_Original;\r\n            taskSwitchWindow = reinterpret_cast<HWND>(\r\n                GetPropW(taskbarWindow, L\"TaskbandHWND\"));\r\n            break;\r\n\r\n        case TaskbarWindowType::secondary:\r\n            taskBandInterfaceVftable =\r\n                CSecondaryTaskBand_ITaskListWndSite_Vftable;\r\n            getTaskbarHost =\r\n                CSecondaryTaskBandGetTaskbarHost_Original;\r\n            taskSwitchWindow = FindWindowExW(\r\n                taskbarWindow, nullptr, L\"WorkerW\", nullptr);\r\n            break;\r\n\r\n        case TaskbarWindowType::invalid:\r\n            return false;\r\n    }\r\n\r\n    if (!taskBandInterfaceVftable || !getTaskbarHost ||\r\n        !ReferenceCountBaseDecrement_Original || !taskSwitchWindow) {\r\n        return false;\r\n    }\r\n\r\n    void* taskBand =\r\n        reinterpret_cast<void*>(GetWindowLongPtrW(taskSwitchWindow, 0));\r\n    if (!taskBand) {\r\n        return false;\r\n    }\r\n\r\n    void* taskBandForTaskListWindowSite = taskBand;\r\n    int interfaceIndex = 0;\r\n    for (; interfaceIndex < TASK_BAND_INTERFACE_SEARCH_LIMIT;\r\n         interfaceIndex++) {\r\n        void* currentVftable =\r\n            *reinterpret_cast<void**>(taskBandForTaskListWindowSite);\r\n        if (currentVftable == taskBandInterfaceVftable) {\r\n            break;\r\n        }\r\n\r\n        taskBandForTaskListWindowSite =\r\n            reinterpret_cast<void**>(taskBandForTaskListWindowSite) + 1;\r\n    }\r\n\r\n    if (interfaceIndex == TASK_BAND_INTERFACE_SEARCH_LIMIT) {\r\n        return false;\r\n    }\r\n\r\n    void* taskbarHostSharedPointer[2] = {};\r\n    try {\r\n        getTaskbarHost(\r\n            taskBandForTaskListWindowSite, taskbarHostSharedPointer);\r\n    } catch (...) {\r\n        Wh_Log(L\"Failed to retrieve the taskbar host\");\r\n        return false;\r\n    }\r\n\r\n    SharedPointerControlBlockGuard controlBlockGuard(\r\n        taskbarHostSharedPointer[1]);\r\n    if (!taskbarHostSharedPointer[0]) {\r\n        return false;\r\n    }\r\n\r\n    try {\r\n        return callback(taskbarHostSharedPointer[0]);\r\n    } catch (...) {\r\n        Wh_Log(L\"Taskbar host operation failed\");\r\n        return false;\r\n    }\r\n}\r\n\r\nbool IsTaskbarHostForWindow(\r\n    HWND taskbarWindow,\r\n    void* taskbarHost) {\r\n    return taskbarHost &&\r\n           WithTaskbarHost(\r\n               taskbarWindow,\r\n               [taskbarHost](void* activeTaskbarHost) {\r\n                   return activeTaskbarHost == taskbarHost;\r\n                });\r\n}\r\n\r\nbool WindowsOwnsLightDismissRegistration(void* taskbarHost) {\r\n    if (!taskbarHost ||\r\n        !g_windowsLightDismissTrackingReliable.load(\r\n            std::memory_order_relaxed)) {\r\n        return true;\r\n    }\r\n\r\n    AcquireSRWLockShared(&g_windowsLightDismissTaskbarHostsLock);\r\n    bool registered =\r\n        g_windowsLightDismissTaskbarHosts.count(taskbarHost) != 0;\r\n    ReleaseSRWLockShared(&g_windowsLightDismissTaskbarHostsLock);\r\n    return registered;\r\n}\r\n\r\nvoid SetWindowsLightDismissRegistration(\r\n    void* taskbarHost,\r\n    bool registered) {\r\n    if (!taskbarHost) {\r\n        return;\r\n    }\r\n\r\n    bool updateFailed = false;\r\n    AcquireSRWLockExclusive(&g_windowsLightDismissTaskbarHostsLock);\r\n    try {\r\n        if (registered) {\r\n            g_windowsLightDismissTaskbarHosts.insert(taskbarHost);\r\n        } else {\r\n            g_windowsLightDismissTaskbarHosts.erase(taskbarHost);\r\n        }\r\n    } catch (...) {\r\n        updateFailed = true;\r\n        g_windowsLightDismissTrackingReliable.store(\r\n            false, std::memory_order_relaxed);\r\n    }\r\n    ReleaseSRWLockExclusive(&g_windowsLightDismissTaskbarHostsLock);\r\n\r\n    if (updateFailed) {\r\n        Wh_Log(L\"Failed to track Windows light-dismiss ownership\");\r\n    }\r\n}\r\n\r\nvoid WINAPI TaskbarHostRegisterLightDismiss_Hook(void* object) {\r\n    TaskbarHostRegisterLightDismiss_Original(object);\r\n    SetWindowsLightDismissRegistration(object, true);\r\n}\r\n\r\nvoid WINAPI TaskbarHostUnregisterLightDismiss_Hook(void* object) {\r\n    bool unregistersPreviewAction =\r\n        g_previewLightDismissArmed &&\r\n        IsTaskbarHostForWindow(\r\n            g_previewLightDismissTaskbarWindow,\r\n            object);\r\n\r\n    TaskbarHostUnregisterLightDismiss_Original(object);\r\n    SetWindowsLightDismissRegistration(object, false);\r\n\r\n    if (unregistersPreviewAction) {\r\n        g_previewLightDismissArmed = false;\r\n        g_previewLightDismissTaskbarWindow = nullptr;\r\n    }\r\n\r\n    g_lastUnregisteredTaskbarHost = object;\r\n}\r\n\r\nusing SetIsPointerOverFlyoutFrame_t =\r\n    void(WINAPI*)(void* object, bool isPointerOver);\r\nSetIsPointerOverFlyoutFrame_t SetIsPointerOverFlyoutFrame_Original;\r\n\r\nusing HoverFlyoutModelDestructor_t = void(WINAPI*)(void* object);\r\nHoverFlyoutModelDestructor_t HoverFlyoutModelDestructor_Original;\r\n\r\nvoid WINAPI SetIsPointerOverFlyoutFrame_Hook(\r\n    void* object,\r\n    bool isPointerOver) {\r\n    if (g_closeOnOutsideClick.load(std::memory_order_relaxed)) {\r\n        if (isPointerOver) {\r\n            g_pointerOverFlyoutFrameModel = object;\r\n        } else if (g_pointerOverFlyoutFrameModel == object) {\r\n            g_pointerOverFlyoutFrameModel = nullptr;\r\n        }\r\n    }\r\n\r\n    SetIsPointerOverFlyoutFrame_Original(object, isPointerOver);\r\n}\r\n\r\nvoid WINAPI HoverFlyoutModelDestructor_Hook(void* object) {\r\n    if (g_pointerOverFlyoutFrameModel == object) {\r\n        g_pointerOverFlyoutFrameModel = nullptr;\r\n    }\r\n\r\n    HoverFlyoutModelDestructor_Original(object);\r\n}\r\n\r\nvoid DisarmPreviewLightDismiss() {\r\n    if (!g_previewLightDismissArmed) {\r\n        return;\r\n    }\r\n\r\n    HWND taskbarWindow = g_previewLightDismissTaskbarWindow;\r\n    g_previewLightDismissArmed = false;\r\n    g_previewLightDismissTaskbarWindow = nullptr;\r\n\r\n    bool taskbarHostFound = WithTaskbarHost(\r\n        taskbarWindow,\r\n        [](void* taskbarHost) {\r\n            if (!WindowsOwnsLightDismissRegistration(taskbarHost)) {\r\n                TaskbarHostUnregisterLightDismiss_Original(taskbarHost);\r\n            }\r\n            return true;\r\n        });\r\n    if (!taskbarHostFound) {\r\n        Wh_Log(L\"Failed to unregister the preview light-dismiss action\");\r\n    }\r\n}\r\n\r\nvoid ArmPreviewLightDismiss() {\r\n    if (g_previewLightDismissArmed ||\r\n        !g_initialized.load(std::memory_order_acquire) ||\r\n        !g_closeOnOutsideClick.load(std::memory_order_relaxed) ||\r\n        !g_activeTaskbarWindow ||\r\n        !TaskbarHostRegisterLightDismiss_Original ||\r\n        !TaskbarHostUnregisterLightDismiss_Original ||\r\n        !SetIsPointerOverFlyoutFrame_Original ||\r\n        !HoverFlyoutModelDestructor_Original ||\r\n        !TaskbarControllerOnLightDismissTriggered_Original) {\r\n        return;\r\n    }\r\n\r\n    // LightDismissAction observes the taskbar InputSite without taking focus.\r\n    HWND taskbarWindow = g_activeTaskbarWindow;\r\n    bool registered = WithTaskbarHost(\r\n        taskbarWindow,\r\n        [](void* taskbarHost) {\r\n            if (WindowsOwnsLightDismissRegistration(taskbarHost)) {\r\n                return false;\r\n            }\r\n\r\n            // The trampoline bypasses the Windows-registration tracking hook.\r\n            TaskbarHostRegisterLightDismiss_Original(taskbarHost);\r\n            return true;\r\n        });\r\n    if (registered) {\r\n        g_previewLightDismissTaskbarWindow = taskbarWindow;\r\n        g_previewLightDismissArmed = true;\r\n    }\r\n}\r\n\r\nvoid CancelPreviewLightDismissRearm() {\r\n    if (!g_previewLightDismissRearmTimer) {\r\n        return;\r\n    }\r\n\r\n    KillTimer(nullptr, g_previewLightDismissRearmTimer);\r\n    g_previewLightDismissRearmTimer = 0;\r\n}\r\n\r\nvoid CALLBACK PreviewLightDismissRearmTimerProc(\r\n    HWND,\r\n    UINT,\r\n    UINT_PTR timerId,\r\n    DWORD) {\r\n    if (g_previewLightDismissRearmTimer != timerId) {\r\n        KillTimer(nullptr, timerId);\r\n        return;\r\n    }\r\n\r\n    KillTimer(nullptr, timerId);\r\n    g_previewLightDismissRearmTimer = 0;\r\n\r\n    if (g_activeHoverFlyoutController) {\r\n        ArmPreviewLightDismiss();\r\n    }\r\n}\r\n\r\nvoid QueuePreviewLightDismissRearm() {\r\n    if (g_previewLightDismissRearmTimer) {\r\n        return;\r\n    }\r\n\r\n    g_previewLightDismissRearmTimer =\r\n        SetTimer(\r\n            nullptr,\r\n            0,\r\n            USER_TIMER_MINIMUM,\r\n            PreviewLightDismissRearmTimerProc);\r\n    if (!g_previewLightDismissRearmTimer) {\r\n        Wh_Log(L\"Failed to queue preview light-dismiss rearming\");\r\n    }\r\n}\r\n\r\nusing CommitDismissFlyout_t = void(WINAPI*)(void* object);\r\nCommitDismissFlyout_t CommitDismissFlyout_Original;\r\n\r\nusing HoverFlyoutControllerDestructor_t = void(WINAPI*)(void* object);\r\nHoverFlyoutControllerDestructor_t HoverFlyoutControllerDestructor_Original;\r\n\r\nvoid ClearActiveHoverFlyoutController(void* object) {\r\n    if (g_activeHoverFlyoutController == object) {\r\n        CancelPreviewLightDismissRearm();\r\n        DisarmPreviewLightDismiss();\r\n        g_activeHoverFlyoutController = nullptr;\r\n        g_activeTaskbarWindow = nullptr;\r\n        g_pointerOverFlyoutFrameModel = nullptr;\r\n    }\r\n}\r\n\r\nvoid CommitActiveHoverFlyoutImmediately() {\r\n    if (!CommitDismissFlyout_Original) {\r\n        return;\r\n    }\r\n\r\n    void* hoverFlyoutController = g_activeHoverFlyoutController;\r\n    if (!hoverFlyoutController) {\r\n        return;\r\n    }\r\n\r\n    CancelPreviewLightDismissRearm();\r\n    DisarmPreviewLightDismiss();\r\n    g_activeHoverFlyoutController = nullptr;\r\n    g_activeTaskbarWindow = nullptr;\r\n    g_pointerOverFlyoutFrameModel = nullptr;\r\n    CommitDismissFlyout_Original(hoverFlyoutController);\r\n}\r\n\r\nvoid DismissActiveHoverFlyoutForOutsideClick() {\r\n    if (!g_closeOnOutsideClick.load(std::memory_order_relaxed)) {\r\n        return;\r\n    }\r\n\r\n    CommitActiveHoverFlyoutImmediately();\r\n}\r\n\r\nvoid WINAPI CommitDismissFlyout_Hook(void* object) {\r\n    ClearActiveHoverFlyoutController(object);\r\n    CommitDismissFlyout_Original(object);\r\n}\r\n\r\nusing UpdateFlyoutWindowPosition_t = void(WINAPI*)(void* object);\r\nUpdateFlyoutWindowPosition_t UpdateFlyoutWindowPosition_Original;\r\n\r\nvoid WINAPI UpdateFlyoutWindowPosition_Hook(void* object) {\r\n    UpdateFlyoutWindowPosition_Original(object);\r\n\r\n    bool trackActiveHoverFlyout =\r\n        g_closeOnOutsideClick.load(std::memory_order_relaxed) ||\r\n        g_closeOnStartButtonHover.load(std::memory_order_relaxed);\r\n    if (!trackActiveHoverFlyout ||\r\n        !g_initialized.load(std::memory_order_acquire) ||\r\n        !CommitDismissFlyout_Original ||\r\n        !HoverFlyoutControllerDestructor_Original) {\r\n        return;\r\n    }\r\n\r\n    HWND taskbarWindow = FindTaskbarWindowForCursor();\r\n    bool controllerChanged =\r\n        g_activeHoverFlyoutController != object;\r\n    bool taskbarChanged =\r\n        taskbarWindow &&\r\n        g_activeTaskbarWindow != taskbarWindow;\r\n    if (controllerChanged || taskbarChanged) {\r\n        CancelPreviewLightDismissRearm();\r\n        DisarmPreviewLightDismiss();\r\n        if (controllerChanged) {\r\n            g_activeTaskbarWindow = nullptr;\r\n            g_pointerOverFlyoutFrameModel = nullptr;\r\n        }\r\n    }\r\n\r\n    g_activeHoverFlyoutController = object;\r\n    if (taskbarWindow) {\r\n        g_activeTaskbarWindow = taskbarWindow;\r\n    }\r\n    ArmPreviewLightDismiss();\r\n}\r\n\r\nusing HideAllHoverFlyouts_t = void(WINAPI*)(void* object);\r\nHideAllHoverFlyouts_t HideAllHoverFlyouts_Original;\r\n\r\nvoid WINAPI HideAllHoverFlyouts_Hook(void* object) {\r\n    ClearActiveHoverFlyoutController(object);\r\n    HideAllHoverFlyouts_Original(object);\r\n}\r\n\r\nvoid WINAPI HoverFlyoutControllerDestructor_Hook(void* object) {\r\n    ClearActiveHoverFlyoutController(object);\r\n    HoverFlyoutControllerDestructor_Original(object);\r\n}\r\n\r\nvoid WINAPI TaskbarControllerOnLightDismissTriggered_Hook(\r\n    void* object,\r\n    const void* taskbarModel,\r\n    const void* eventArguments) {\r\n    void* taskbarHost = g_lastUnregisteredTaskbarHost;\r\n    g_lastUnregisteredTaskbarHost = nullptr;\r\n    if (!g_closeOnOutsideClick.load(std::memory_order_relaxed)) {\r\n        TaskbarControllerOnLightDismissTriggered_Original(\r\n            object, taskbarModel, eventArguments);\r\n        return;\r\n    }\r\n\r\n    bool eventTargetsActiveTaskbar =\r\n        IsTaskbarHostForWindow(\r\n            g_activeTaskbarWindow,\r\n            taskbarHost);\r\n    if (!eventTargetsActiveTaskbar) {\r\n        TaskbarControllerOnLightDismissTriggered_Original(\r\n            object, taskbarModel, eventArguments);\r\n        return;\r\n    }\r\n\r\n    bool pointerOverFlyoutFrame =\r\n        g_pointerOverFlyoutFrameModel != nullptr;\r\n    if (pointerOverFlyoutFrame) {\r\n        QueuePreviewLightDismissRearm();\r\n    } else {\r\n        CancelPreviewLightDismissRearm();\r\n        DismissActiveHoverFlyoutForOutsideClick();\r\n    }\r\n\r\n    TaskbarControllerOnLightDismissTriggered_Original(\r\n        object, taskbarModel, eventArguments);\r\n}\r\n\r\nbool IsStartButton(void* object) {\r\n    if (!object) {\r\n        return false;\r\n    }\r\n\r\n    try {\r\n        IUnknown* innerObject = reinterpret_cast<IUnknown**>(object)[1];\r\n        if (!innerObject) {\r\n            return false;\r\n        }\r\n\r\n        winrt::Windows::UI::Xaml::FrameworkElement element = nullptr;\r\n        HRESULT result = innerObject->QueryInterface(\r\n            winrt::guid_of<winrt::Windows::UI::Xaml::FrameworkElement>(),\r\n            winrt::put_abi(element));\r\n        if (FAILED(result) || !element) {\r\n            return false;\r\n        }\r\n\r\n        return winrt::Windows::UI::Xaml::Automation::AutomationProperties::\r\n                   GetAutomationId(element) == L\"StartButton\";\r\n    } catch (...) {\r\n        return false;\r\n    }\r\n}\r\n\r\nusing ExperienceToggleButtonOnPointerEntered_t =\r\n    void(WINAPI*)(void* object, const void* eventArguments);\r\nExperienceToggleButtonOnPointerEntered_t\r\n    ExperienceToggleButtonOnPointerEntered_Original;\r\n\r\nvoid WINAPI ExperienceToggleButtonOnPointerEntered_Hook(\r\n    void* object,\r\n    const void* eventArguments) {\r\n    void* activeHoverFlyoutController = g_activeHoverFlyoutController;\r\n    bool shouldDismiss =\r\n        activeHoverFlyoutController &&\r\n        g_closeOnStartButtonHover.load(std::memory_order_relaxed) &&\r\n        IsStartButton(object);\r\n\r\n    ExperienceToggleButtonOnPointerEntered_Original(object, eventArguments);\r\n\r\n    if (shouldDismiss &&\r\n        g_activeHoverFlyoutController == activeHoverFlyoutController) {\r\n        CommitActiveHoverFlyoutImmediately();\r\n    }\r\n}\r\n\r\nusing TaskItemThumbnailViewOnCloseButtonClicked_t =\r\n    void(WINAPI*)(void* object,\r\n                  const void* sender,\r\n                  const void* eventArguments);\r\nTaskItemThumbnailViewOnCloseButtonClicked_t\r\n    TaskItemThumbnailViewOnCloseButtonClicked_Original;\r\n\r\nvoid WINAPI TaskItemThumbnailViewOnCloseButtonClicked_Hook(\r\n    void* object,\r\n    const void* sender,\r\n    const void* eventArguments) {\r\n    // Tag the native dismiss transition caused by thumbnail removal\r\n    g_thumbnailCloseButtonDelayPending = true;\r\n    TaskItemThumbnailViewOnCloseButtonClicked_Original(\r\n        object, sender, eventArguments);\r\n}\r\n\r\n// This is std::chrono::duration<__int64, std::ratio<1, 10000000>> by value.\r\nusing TransitionToFlyoutVisiblePendingState_t =\r\n    void(WINAPI*)(void* object, void* targetItemKey, LONGLONG delayTimeSpan);\r\nTransitionToFlyoutVisiblePendingState_t\r\n    TransitionToFlyoutVisiblePendingState_Original;\r\n\r\nvoid WINAPI TransitionToFlyoutVisiblePendingState_Hook(\r\n    void* object,\r\n    void* targetItemKey,\r\n    LONGLONG delayTimeSpan) {\r\n    // A new hover target supersedes an unconsumed close-button transition\r\n    g_thumbnailCloseButtonDelayPending = false;\r\n\r\n    LONGLONG configuredDelayTimeSpan =\r\n        g_hoverDelayTimeSpan.load(std::memory_order_relaxed);\r\n    LONGLONG appliedDelayTimeSpan =\r\n        delayTimeSpan > 0 ? configuredDelayTimeSpan : delayTimeSpan;\r\n\r\n    Wh_Log(L\"Hover transition: %lld -> %lld TimeSpan ticks\",\r\n           delayTimeSpan, appliedDelayTimeSpan);\r\n\r\n    TransitionToFlyoutVisiblePendingState_Original(\r\n        object, targetItemKey, appliedDelayTimeSpan);\r\n}\r\n\r\n// Limits the MouseHoverTime override to the active preview dismissal source\r\nclass DismissTransitionScope {\r\n   public:\r\n    explicit DismissTransitionScope(DismissDelaySource source) noexcept\r\n        : previousSource_(g_dismissDelaySource) {\r\n        g_dismissDelaySource = source;\r\n    }\r\n\r\n    DismissTransitionScope(const DismissTransitionScope&) = delete;\r\n    DismissTransitionScope& operator=(const DismissTransitionScope&) = delete;\r\n\r\n    ~DismissTransitionScope() noexcept {\r\n        g_dismissDelaySource = previousSource_;\r\n    }\r\n\r\n   private:\r\n    DismissDelaySource previousSource_;\r\n};\r\n\r\nusing TransitionToFlyoutDismissPendingState_t = void(WINAPI*)(void* object);\r\nTransitionToFlyoutDismissPendingState_t\r\n    TransitionToFlyoutDismissPendingState_Original;\r\n\r\nvoid WINAPI TransitionToFlyoutDismissPendingState_Hook(void* object) {\r\n    DismissDelaySource source = DismissDelaySource::pointerExit;\r\n    if (g_thumbnailCloseButtonDelayPending) {\r\n        g_thumbnailCloseButtonDelayPending = false;\r\n        source = DismissDelaySource::thumbnailCloseButton;\r\n    }\r\n\r\n    DismissTransitionScope dismissTransitionScope(source);\r\n    TransitionToFlyoutDismissPendingState_Original(object);\r\n}\r\n\r\nusing MouseHoverTime_t = UINT(WINAPI*)(void* object);\r\nMouseHoverTime_t MouseHoverTime_Original;\r\n\r\nUINT WINAPI MouseHoverTime_Hook(void* object) {\r\n    UINT systemDelayMilliseconds = MouseHoverTime_Original(object);\r\n    UINT configuredDelayMilliseconds = 0;\r\n    const WCHAR* transitionName = nullptr;\r\n    switch (g_dismissDelaySource) {\r\n        case DismissDelaySource::none:\r\n            return systemDelayMilliseconds;\r\n\r\n        case DismissDelaySource::pointerExit:\r\n            configuredDelayMilliseconds =\r\n                g_closeDelayMilliseconds.load(std::memory_order_relaxed);\r\n            transitionName = L\"Pointer-exit close\";\r\n            break;\r\n\r\n        case DismissDelaySource::thumbnailCloseButton:\r\n            configuredDelayMilliseconds =\r\n                g_closeButtonDelayMilliseconds.load(\r\n                    std::memory_order_relaxed);\r\n            transitionName = L\"Close-button\";\r\n            break;\r\n    }\r\n\r\n    Wh_Log(L\"%s transition: %u -> %u ms\",\r\n           transitionName,\r\n           systemDelayMilliseconds,\r\n           configuredDelayMilliseconds);\r\n\r\n    return configuredDelayMilliseconds;\r\n}\r\n\r\nvoid LoadSettings() {\r\n    int delayMilliseconds = Wh_GetIntSetting(L\"delayMs\");\r\n    if (delayMilliseconds < MINIMUM_DELAY_MS) {\r\n        delayMilliseconds = MINIMUM_DELAY_MS;\r\n    }\r\n\r\n    int closeDelayMilliseconds = Wh_GetIntSetting(L\"closeDelayMs\");\r\n    if (closeDelayMilliseconds < MINIMUM_DELAY_MS) {\r\n        closeDelayMilliseconds = MINIMUM_DELAY_MS;\r\n    }\r\n\r\n    int closeButtonDelayMilliseconds =\r\n        Wh_GetIntSetting(L\"closeButtonDelayMs\");\r\n    if (closeButtonDelayMilliseconds < MINIMUM_DELAY_MS) {\r\n        closeButtonDelayMilliseconds = MINIMUM_DELAY_MS;\r\n    }\r\n\r\n    LONGLONG delayTimeSpan =\r\n        static_cast<LONGLONG>(delayMilliseconds) *\r\n        TIME_SPAN_TICKS_PER_MILLISECOND;\r\n    g_hoverDelayTimeSpan.store(delayTimeSpan, std::memory_order_relaxed);\r\n    g_closeDelayMilliseconds.store(\r\n        static_cast<UINT>(closeDelayMilliseconds),\r\n        std::memory_order_relaxed);\r\n    g_closeButtonDelayMilliseconds.store(\r\n        static_cast<UINT>(closeButtonDelayMilliseconds),\r\n        std::memory_order_relaxed);\r\n    g_closeOnOutsideClick.store(\r\n        Wh_GetIntSetting(L\"closeOnOutsideClick\") != 0,\r\n        std::memory_order_relaxed);\r\n    g_closeOnStartButtonHover.store(\r\n        Wh_GetIntSetting(L\"closeOnStartButtonHover\") != 0,\r\n        std::memory_order_relaxed);\r\n\r\n    Wh_Log(L\"Settings: delayMs=%d closeDelayMs=%d \"\r\n           L\"closeButtonDelayMs=%d \"\r\n           L\"closeOnOutsideClick=%d closeOnStartButtonHover=%d\",\r\n           delayMilliseconds,\r\n           closeDelayMilliseconds,\r\n           closeButtonDelayMilliseconds,\r\n           g_closeOnOutsideClick.load(std::memory_order_relaxed),\r\n           g_closeOnStartButtonHover.load(std::memory_order_relaxed));\r\n}\r\n\r\nHMODULE GetTaskbarModuleHandle() {\r\n    return GetModuleHandleW(L\"Taskbar.dll\");\r\n}\r\n\r\nHMODULE GetTaskbarViewModuleHandle() {\r\n    HMODULE module = GetModuleHandleW(L\"Taskbar.View.dll\");\r\n    if (!module) {\r\n        module = GetModuleHandleW(L\"ExplorerExtensions.dll\");\r\n    }\r\n\r\n    return module;\r\n}\r\n\r\nbool HookTaskbarSymbols(HMODULE module) {\r\n    if (!module) {\r\n        return false;\r\n    }\r\n\r\n    bool expected = false;\r\n    if (!g_taskbarHooksQueued.compare_exchange_strong(\r\n            expected, true, std::memory_order_relaxed)) {\r\n        return true;\r\n    }\r\n\r\n    WindhawkUtils::SYMBOL_HOOK taskbarDllHooks[] = {\r\n        {\r\n            {\r\n                LR\"(const CTaskBand::`vftable'{for `ITaskListWndSite'})\",\r\n            },\r\n            &CTaskBand_ITaskListWndSite_Vftable,\r\n            nullptr,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(const CSecondaryTaskBand::`vftable'{for `ITaskListWndSite'})\",\r\n            },\r\n            &CSecondaryTaskBand_ITaskListWndSite_Vftable,\r\n            nullptr,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(public: virtual class std::shared_ptr<class TaskbarHost> __cdecl CTaskBand::GetTaskbarHost(void)const )\",\r\n            },\r\n            &CTaskBandGetTaskbarHost_Original,\r\n            nullptr,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(public: virtual class std::shared_ptr<class TaskbarHost> __cdecl CSecondaryTaskBand::GetTaskbarHost(void)const )\",\r\n            },\r\n            &CSecondaryTaskBandGetTaskbarHost_Original,\r\n            nullptr,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(public: void __cdecl std::_Ref_count_base::_Decref(void))\",\r\n            },\r\n            &ReferenceCountBaseDecrement_Original,\r\n            nullptr,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(private: void __cdecl TaskbarHost::RegisterLightDismiss(void))\",\r\n            },\r\n            &TaskbarHostRegisterLightDismiss_Original,\r\n            TaskbarHostRegisterLightDismiss_Hook,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(private: void __cdecl TaskbarHost::UnregisterLightDismiss(void))\",\r\n            },\r\n            &TaskbarHostUnregisterLightDismiss_Original,\r\n            TaskbarHostUnregisterLightDismiss_Hook,\r\n            true,\r\n        },\r\n    };\r\n\r\n    if (!WindhawkUtils::HookSymbols(module, taskbarDllHooks,\r\n                                    ARRAYSIZE(taskbarDllHooks))) {\r\n        Wh_Log(L\"Failed to resolve Taskbar.dll symbols\");\r\n        return false;\r\n    }\r\n\r\n    if (!TaskbarHostRegisterLightDismiss_Original ||\r\n        !TaskbarHostUnregisterLightDismiss_Original ||\r\n        !CTaskBand_ITaskListWndSite_Vftable ||\r\n        !CSecondaryTaskBand_ITaskListWndSite_Vftable ||\r\n        !CTaskBandGetTaskbarHost_Original ||\r\n        !CSecondaryTaskBandGetTaskbarHost_Original ||\r\n        !ReferenceCountBaseDecrement_Original) {\r\n        Wh_Log(L\"Taskbar light-dismiss support isn't available on this build\");\r\n    }\r\n\r\n    return true;\r\n}\r\n\r\nbool HookTaskbarViewSymbols(HMODULE module) {\r\n    if (!module) {\r\n        return false;\r\n    }\r\n\r\n    bool expected = false;\r\n    if (!g_taskbarViewHooksQueued.compare_exchange_strong(\r\n            expected, true, std::memory_order_relaxed)) {\r\n        return true;\r\n    }\r\n\r\n    bool closeOnOutsideClick =\r\n        g_closeOnOutsideClick.load(std::memory_order_relaxed);\r\n    bool closeOnStartButtonHover =\r\n        g_closeOnStartButtonHover.load(std::memory_order_relaxed);\r\n\r\n    // Taskbar.View.dll, ExplorerExtensions.dll\r\n    WindhawkUtils::SYMBOL_HOOK taskbarViewHooks[] = {\r\n        {\r\n            {\r\n                LR\"(private: void __cdecl winrt::Taskbar::implementation::HoverFlyoutModel::TransitionToFlyoutVisiblePendingState(struct winrt::hstring,class std::chrono::duration<__int64,struct std::ratio<1,10000000> >))\",\r\n                LR\"(private: void __cdecl winrt::Taskbar::implementation::HoverFlyoutModel::TransitionToFlyoutVisiblePendingState(struct winrt::hstring,class std::chrono::duration<long long,struct std::ratio<1,10000000> >))\",\r\n            },\r\n            &TransitionToFlyoutVisiblePendingState_Original,\r\n            TransitionToFlyoutVisiblePendingState_Hook,\r\n        },\r\n        {\r\n            {\r\n                LR\"(private: void __cdecl winrt::Taskbar::implementation::HoverFlyoutModel::TransitionToFlyoutDismissPendingState(void))\",\r\n            },\r\n            &TransitionToFlyoutDismissPendingState_Original,\r\n            TransitionToFlyoutDismissPendingState_Hook,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(public: __cdecl winrt::impl::consume_Windows_UI_ViewManagement_IUISettings<struct winrt::Windows::UI::ViewManagement::IUISettings>::MouseHoverTime(void)const )\",\r\n                LR\"(public: unsigned int __cdecl winrt::impl::consume_Windows_UI_ViewManagement_IUISettings<struct winrt::Windows::UI::ViewManagement::IUISettings>::MouseHoverTime(void)const )\",\r\n            },\r\n            &MouseHoverTime_Original,\r\n            MouseHoverTime_Hook,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(private: void __cdecl winrt::Taskbar::implementation::TaskItemThumbnailView::OnCloseButtonClicked(struct winrt::Windows::Foundation::IInspectable const &,struct winrt::Windows::UI::Xaml::RoutedEventArgs const &))\",\r\n            },\r\n            &TaskItemThumbnailViewOnCloseButtonClicked_Original,\r\n            TaskItemThumbnailViewOnCloseButtonClicked_Hook,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(private: void __cdecl winrt::Taskbar::implementation::HoverFlyoutController::CommitDismissFlyout(void))\",\r\n            },\r\n            &CommitDismissFlyout_Original,\r\n            CommitDismissFlyout_Hook,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(private: void __cdecl winrt::Taskbar::implementation::HoverFlyoutController::UpdateFlyoutWindowPosition(void))\",\r\n            },\r\n            &UpdateFlyoutWindowPosition_Original,\r\n            UpdateFlyoutWindowPosition_Hook,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(public: virtual __cdecl winrt::Taskbar::implementation::HoverFlyoutController::~HoverFlyoutController(void))\",\r\n            },\r\n            &HoverFlyoutControllerDestructor_Original,\r\n            HoverFlyoutControllerDestructor_Hook,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(private: void __cdecl winrt::Taskbar::implementation::HoverFlyoutController::HideAllHoverFlyouts(void))\",\r\n            },\r\n            &HideAllHoverFlyouts_Original,\r\n            HideAllHoverFlyouts_Hook,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(public: void __cdecl winrt::Taskbar::implementation::HoverFlyoutModel::SetIsPointerOverFlyoutFrame(bool))\",\r\n            },\r\n            &SetIsPointerOverFlyoutFrame_Original,\r\n            SetIsPointerOverFlyoutFrame_Hook,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(public: virtual __cdecl winrt::Taskbar::implementation::HoverFlyoutModel::~HoverFlyoutModel(void))\",\r\n            },\r\n            &HoverFlyoutModelDestructor_Original,\r\n            HoverFlyoutModelDestructor_Hook,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(private: void __cdecl winrt::Taskbar::implementation::TaskbarController::OnLightDismissTriggered(struct winrt::WindowsUdk::UI::Shell::TaskbarModel const &,struct winrt::Windows::Foundation::IInspectable const &))\",\r\n            },\r\n            &TaskbarControllerOnLightDismissTriggered_Original,\r\n            TaskbarControllerOnLightDismissTriggered_Hook,\r\n            true,\r\n        },\r\n        {\r\n            {\r\n                LR\"(public: virtual void __cdecl winrt::Taskbar::implementation::ExperienceToggleButton::OnPointerEntered(struct winrt::Windows::UI::Xaml::Input::PointerRoutedEventArgs const &))\",\r\n            },\r\n            &ExperienceToggleButtonOnPointerEntered_Original,\r\n            ExperienceToggleButtonOnPointerEntered_Hook,\r\n            true,\r\n        },\r\n    };\r\n\r\n    if (!WindhawkUtils::HookSymbols(\r\n            module,\r\n            taskbarViewHooks,\r\n            ARRAYSIZE(taskbarViewHooks))) {\r\n        Wh_Log(L\"Failed to resolve Taskbar.View symbols\");\r\n        return false;\r\n    }\r\n\r\n    if (!TransitionToFlyoutDismissPendingState_Original ||\r\n        !MouseHoverTime_Original) {\r\n        Wh_Log(L\"Thumbnail close-delay symbols aren't available; instant \"\r\n               L\"close is disabled on this build\");\r\n    }\r\n\r\n    if (!TaskItemThumbnailViewOnCloseButtonClicked_Original) {\r\n        Wh_Log(L\"Thumbnail close-button delay isn't available on this build\");\r\n    }\r\n\r\n    if (closeOnOutsideClick &&\r\n        (!TaskbarControllerOnLightDismissTriggered_Original ||\r\n         !UpdateFlyoutWindowPosition_Original ||\r\n         !SetIsPointerOverFlyoutFrame_Original ||\r\n         !HoverFlyoutModelDestructor_Original ||\r\n         !HoverFlyoutControllerDestructor_Original ||\r\n         !CommitDismissFlyout_Original)) {\r\n        Wh_Log(L\"Thumbnail light-dismiss symbols aren't available; \"\r\n               L\"close-on-outside-click is disabled on this build\");\r\n    }\r\n\r\n    if (closeOnStartButtonHover &&\r\n        (!ExperienceToggleButtonOnPointerEntered_Original ||\r\n         !UpdateFlyoutWindowPosition_Original ||\r\n         !CommitDismissFlyout_Original ||\r\n         !HoverFlyoutControllerDestructor_Original)) {\r\n        Wh_Log(L\"Start-button hover symbols aren't available; \"\r\n               L\"close-on-Start-hover is disabled on this build\");\r\n    }\r\n\r\n    WCHAR modulePath[MAX_PATH] = {};\r\n    if (!GetModuleFileNameW(module, modulePath, ARRAYSIZE(modulePath))) {\r\n        wcscpy_s(modulePath, L\"(unknown module)\");\r\n    }\r\n\r\n    Wh_Log(L\"Taskbar.View hooks queued for %s\", modulePath);\r\n    return true;\r\n}\r\n\r\nvoid HandleLoadedModule(HMODULE module) {\r\n    if (!module) {\r\n        return;\r\n    }\r\n\r\n    bool hooksQueued = false;\r\n    if (!g_taskbarHooksQueued.load(std::memory_order_relaxed) &&\r\n        GetTaskbarModuleHandle() == module) {\r\n        hooksQueued = HookTaskbarSymbols(module);\r\n    }\r\n\r\n    if (!g_taskbarViewHooksQueued.load(std::memory_order_relaxed) &&\r\n        GetTaskbarViewModuleHandle() == module) {\r\n        hooksQueued = HookTaskbarViewSymbols(module) || hooksQueued;\r\n    }\r\n\r\n    if (hooksQueued &&\r\n        g_initialized.load(std::memory_order_relaxed) &&\r\n        !Wh_ApplyHookOperations()) {\r\n        Wh_Log(L\"Failed to apply late taskbar hooks\");\r\n    }\r\n}\r\n\r\nusing LoadLibraryExW_t = decltype(&LoadLibraryExW);\r\nLoadLibraryExW_t LoadLibraryExW_Original;\r\n\r\nHMODULE WINAPI LoadLibraryExW_Hook(LPCWSTR fileName,\r\n    HANDLE file,\r\n    DWORD flags) {\r\n    HMODULE module = LoadLibraryExW_Original(fileName, file, flags);\r\n    HandleLoadedModule(module);\r\n    return module;\r\n}\r\n\r\nbool HookLoadLibraryExW() {\r\n    HMODULE kernelBase = GetModuleHandleW(L\"kernelbase.dll\");\r\n    if (!kernelBase) {\r\n        Wh_Log(L\"kernelbase.dll isn't loaded\");\r\n        return false;\r\n    }\r\n\r\n    LoadLibraryExW_t loadLibraryExW =\r\n        reinterpret_cast<LoadLibraryExW_t>(\r\n            GetProcAddress(kernelBase, \"LoadLibraryExW\"));\r\n    if (!loadLibraryExW) {\r\n        Wh_Log(L\"LoadLibraryExW wasn't found\");\r\n        return false;\r\n    }\r\n\r\n    if (!WindhawkUtils::SetFunctionHook(\r\n            loadLibraryExW,\r\n            LoadLibraryExW_Hook,\r\n            &LoadLibraryExW_Original)) {\r\n        Wh_Log(L\"Failed to hook LoadLibraryExW\");\r\n        return false;\r\n    }\r\n\r\n    return true;\r\n}\r\n\r\nusing RunFromWindowThreadProcedure = void(WINAPI*)(void* parameter);\r\n\r\nstruct RunFromWindowThreadParameters {\r\n    RunFromWindowThreadProcedure procedure;\r\n    void* parameter;\r\n    bool executed;\r\n};\r\n\r\nUINT GetRunFromWindowThreadMessage() {\r\n    static const UINT message =\r\n        RegisterWindowMessageW(\r\n            L\"Windhawk_RunFromWindowThread_\" WH_MOD_ID);\r\n    return message;\r\n}\r\n\r\nLRESULT CALLBACK RunFromWindowThreadHook(\r\n    int code,\r\n    WPARAM wParam,\r\n    LPARAM lParam) {\r\n    if (code == HC_ACTION) {\r\n        const CWPSTRUCT* windowMessage =\r\n            reinterpret_cast<const CWPSTRUCT*>(lParam);\r\n        if (windowMessage->message ==\r\n                GetRunFromWindowThreadMessage() &&\r\n            windowMessage->lParam) {\r\n            RunFromWindowThreadParameters* parameters =\r\n                reinterpret_cast<RunFromWindowThreadParameters*>(\r\n                    windowMessage->lParam);\r\n            if (!parameters->executed) {\r\n                parameters->executed = true;\r\n                parameters->procedure(parameters->parameter);\r\n            }\r\n        }\r\n    }\r\n\r\n    return CallNextHookEx(nullptr, code, wParam, lParam);\r\n}\r\n\r\nbool RunFromWindowThread(\r\n    HWND window,\r\n    RunFromWindowThreadProcedure procedure,\r\n    void* parameter) {\r\n    DWORD threadId = GetWindowThreadProcessId(window, nullptr);\r\n    if (!threadId) {\r\n        return false;\r\n    }\r\n\r\n    UINT message = GetRunFromWindowThreadMessage();\r\n    if (!message) {\r\n        return false;\r\n    }\r\n\r\n    if (threadId == GetCurrentThreadId()) {\r\n        procedure(parameter);\r\n        return true;\r\n    }\r\n\r\n    HHOOK hook = SetWindowsHookExW(\r\n        WH_CALLWNDPROC,\r\n        RunFromWindowThreadHook,\r\n        nullptr,\r\n        threadId);\r\n    if (!hook) {\r\n        return false;\r\n    }\r\n\r\n    RunFromWindowThreadParameters parameters = {\r\n        procedure,\r\n        parameter,\r\n        false,\r\n    };\r\n    SendMessageW(\r\n        window,\r\n        message,\r\n        0,\r\n        reinterpret_cast<LPARAM>(&parameters));\r\n    UnhookWindowsHookEx(hook);\r\n    return parameters.executed;\r\n}\r\n\r\nvoid WINAPI DisableOutsideClickTaskbarThreadState(void*) {\r\n    CancelPreviewLightDismissRearm();\r\n    DisarmPreviewLightDismiss();\r\n    g_pointerOverFlyoutFrameModel = nullptr;\r\n    g_lastUnregisteredTaskbarHost = nullptr;\r\n}\r\n\r\nvoid WINAPI CleanupTaskbarThreadState(void*) {\r\n    DisableOutsideClickTaskbarThreadState(nullptr);\r\n    g_activeHoverFlyoutController = nullptr;\r\n    g_activeTaskbarWindow = nullptr;\r\n}\r\n\r\nstruct RUN_TASKBAR_THREAD_OPERATION_CONTEXT {\r\n    RunFromWindowThreadProcedure procedure;\r\n};\r\n\r\nBOOL CALLBACK RunTaskbarThreadOperationCallback(\r\n    HWND window,\r\n    LPARAM parameter) {\r\n    RUN_TASKBAR_THREAD_OPERATION_CONTEXT* context =\r\n        reinterpret_cast<RUN_TASKBAR_THREAD_OPERATION_CONTEXT*>(\r\n            parameter);\r\n    DWORD processId = 0;\r\n    GetWindowThreadProcessId(window, &processId);\r\n    if (processId == GetCurrentProcessId() &&\r\n        GetTaskbarWindowType(window) !=\r\n            TaskbarWindowType::invalid &&\r\n        !RunFromWindowThread(\r\n            window,\r\n            context->procedure,\r\n            nullptr)) {\r\n        Wh_Log(\r\n            L\"Failed to update taskbar thread %lu\",\r\n            GetWindowThreadProcessId(window, nullptr));\r\n    }\r\n\r\n    return TRUE;\r\n}\r\n\r\nvoid RunOnTaskbarThreads(RunFromWindowThreadProcedure procedure) {\r\n    RUN_TASKBAR_THREAD_OPERATION_CONTEXT context = {\r\n        procedure,\r\n    };\r\n    EnumWindows(\r\n        RunTaskbarThreadOperationCallback,\r\n        reinterpret_cast<LPARAM>(&context));\r\n}\r\n\r\n}  // namespace\r\n\r\nBOOL Wh_ModInit() {\r\n    Wh_Log(L\"Initializing\");\r\n    LoadSettings();\r\n\r\n    if (!HookLoadLibraryExW()) {\r\n        return FALSE;\r\n    }\r\n\r\n    HMODULE taskbarModule = GetTaskbarModuleHandle();\r\n    if (taskbarModule && !HookTaskbarSymbols(taskbarModule)) {\r\n        Wh_Log(L\"Taskbar.dll light-dismiss hooks weren't installed\");\r\n    }\r\n\r\n    HMODULE taskbarViewModule = GetTaskbarViewModuleHandle();\r\n    if (taskbarViewModule && !HookTaskbarViewSymbols(taskbarViewModule)) {\r\n        return FALSE;\r\n    }\r\n\r\n    g_initialized.store(true, std::memory_order_release);\r\n    Wh_Log(L\"Initialized\");\r\n    return TRUE;\r\n}\r\n\r\nvoid Wh_ModAfterInit() {\r\n    bool hooksQueued = false;\r\n\r\n    if (!g_taskbarHooksQueued.load(std::memory_order_relaxed)) {\r\n        HMODULE taskbarModule = GetTaskbarModuleHandle();\r\n        if (taskbarModule) {\r\n            hooksQueued = HookTaskbarSymbols(taskbarModule);\r\n        }\r\n    }\r\n\r\n    if (!g_taskbarViewHooksQueued.load(std::memory_order_relaxed)) {\r\n        HMODULE taskbarViewModule = GetTaskbarViewModuleHandle();\r\n        if (taskbarViewModule) {\r\n            hooksQueued =\r\n                HookTaskbarViewSymbols(taskbarViewModule) || hooksQueued;\r\n        } else {\r\n            Wh_Log(L\"Taskbar.View isn't loaded yet\");\r\n        }\r\n    }\r\n\r\n    if (hooksQueued && !Wh_ApplyHookOperations()) {\r\n        Wh_Log(L\"Failed to apply taskbar hooks in Wh_ModAfterInit\");\r\n    }\r\n}\r\n\r\nvoid Wh_ModSettingsChanged() {\r\n    bool previousCloseOnOutsideClick =\r\n        g_closeOnOutsideClick.load(std::memory_order_relaxed);\r\n    LoadSettings();\r\n\r\n    if (previousCloseOnOutsideClick &&\r\n        !g_closeOnOutsideClick.load(std::memory_order_relaxed)) {\r\n        RunOnTaskbarThreads(\r\n            DisableOutsideClickTaskbarThreadState);\r\n    }\r\n}\r\n\r\nvoid Wh_ModBeforeUninit() {\r\n    g_initialized.store(false, std::memory_order_release);\r\n    g_closeOnOutsideClick.store(false, std::memory_order_relaxed);\r\n    g_closeOnStartButtonHover.store(false, std::memory_order_relaxed);\r\n    RunOnTaskbarThreads(CleanupTaskbarThreadState);\r\n}\r\n\r\nvoid Wh_ModUninit() {\r\n    Wh_Log(L\"Uninitialized\");\r\n}\r\n",
+      "settings": {
+        "delayMs": 1,
+        "closeDelayMs": 1,
+        "closeButtonDelayMs": 500,
+        "closeOnOutsideClick": 0,
+        "closeOnStartButtonHover": 0
+      },
+      "config": {
+        "loggingEnabled": true
+      }
+    },
+    {
+      "modId": "local@start-menu-open-real-file-location",
+      "isLocal": true,
+      "version": "1.1.0",
+      "name": "Start Menu Open Real File Location",
+      "source": "// ==WindhawkMod==\r\n// @id              start-menu-open-real-file-location\r\n// @name            Start Menu Open Real File Location\r\n// @description     Makes Open file location select a Start menu shortcut's target instead of the shortcut itself\r\n// @version         1.1.0\r\n// @author          Alchemy\r\n// @github          https://github.com/alchemyyy\r\n// @license         MIT\r\n// @include         StartMenuExperienceHost.exe\r\n// @include         SearchHost.exe\r\n// @include         SearchApp.exe\r\n// @include         RuntimeBroker.exe\r\n// @architecture    x86-64\r\n// @compilerOptions -lole32\r\n// ==/WindhawkMod==\r\n\r\n// ==WindhawkModReadme==\r\n/*\r\n# Start Menu Open Real File Location\r\n\r\nChanges `Open file location` for traditional desktop programs in the Start menu and Windows Search. Instead of opening the Start Menu Programs directory and selecting the program's `.lnk` file, Explorer opens the shortcut target's directory and selects the target.\r\n\r\nThe mod reads only the target stored in the shortcut. It doesn't search for a moved target or display link-resolution dialogs.\r\n\r\n## Current Limitations and TODOs\r\n\r\n- Packaged Microsoft Store apps don't normally have a conventional shortcut target and are left unchanged for now.\r\n- If the target can't be read, Windows retains its original behavior and opens the shortcut's location.\r\n- The direct shortcut target is selected. For wrapper shortcuts, this can be a launcher, script host, or another intermediate executable.\r\n- There is currently no program blacklist, so shortcuts that point to common wrappers or launchers will be resolved there.\r\n*/\r\n// ==/WindhawkModReadme==\r\n\r\n#include <windows.h>\r\n\r\n#include <shlobj.h>\r\n#include <shobjidl.h>\r\n#include <wrl/client.h>\r\n\r\n#include <memory>\r\n\r\n#include <windhawk_utils.h>\r\n\r\nnamespace {\r\n\r\nusing SHOpenFolderAndSelectItemsFunction = HRESULT(WINAPI*)(\r\n    PCIDLIST_ABSOLUTE folderPidl,\r\n    UINT childCount,\r\n    PCUITEMID_CHILD_ARRAY childPidls,\r\n    DWORD flags);\r\n\r\nstruct CoTaskMemoryDeleter {\r\n    void operator()(void* memory) const noexcept {\r\n        CoTaskMemFree(memory);\r\n    }\r\n};\r\n\r\nusing UniquePIDL = std::unique_ptr<ITEMIDLIST, CoTaskMemoryDeleter>;\r\nusing UniqueWideString = std::unique_ptr<WCHAR, CoTaskMemoryDeleter>;\r\n\r\nSHOpenFolderAndSelectItemsFunction s_windowsStorageOriginal = nullptr;\r\nSHOpenFolderAndSelectItemsFunction s_shell32Original = nullptr;\r\nHMODULE s_windowsStorageModule = nullptr;\r\nbool s_isSearchProcess = false;\r\n\r\nvoid ReleaseWindowsStorageModule() {\r\n    if (!s_windowsStorageModule) {\r\n        return;\r\n    }\r\n\r\n    FreeLibrary(s_windowsStorageModule);\r\n    s_windowsStorageModule = nullptr;\r\n}\r\n\r\nbool IsAppResolverCaller(void* returnAddress) {\r\n    HMODULE callerModule = nullptr;\r\n    if (!GetModuleHandleExW(\r\n            GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS |\r\n                GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT,\r\n            reinterpret_cast<LPCWSTR>(returnAddress), &callerModule)) {\r\n        return false;\r\n    }\r\n\r\n    HMODULE appResolverModule = GetModuleHandleW(L\"appresolver.dll\");\r\n    return appResolverModule && callerModule == appResolverModule;\r\n}\r\n\r\nUniquePIDL ResolveShellLinkTarget(PCIDLIST_ABSOLUTE shortcutPidl) {\r\n    Microsoft::WRL::ComPtr<IShellFolder> parentFolder;\r\n    PCUITEMID_CHILD shortcutChildPidl = nullptr;\r\n    HRESULT result = SHBindToParent(\r\n        shortcutPidl, IID_PPV_ARGS(parentFolder.GetAddressOf()),\r\n        &shortcutChildPidl);\r\n    if (FAILED(result) || !parentFolder || !shortcutChildPidl) {\r\n        return nullptr;\r\n    }\r\n\r\n    Microsoft::WRL::ComPtr<IShellLinkW> shellLink;\r\n    result = parentFolder->GetUIObjectOf(\r\n        nullptr, 1, &shortcutChildPidl, __uuidof(IShellLinkW), nullptr,\r\n        reinterpret_cast<void**>(shellLink.GetAddressOf()));\r\n    if (FAILED(result) || !shellLink) {\r\n        return nullptr;\r\n    }\r\n\r\n    PIDLIST_ABSOLUTE targetPidl = nullptr;\r\n    result = shellLink->GetIDList(&targetPidl);\r\n    if (SUCCEEDED(result) && targetPidl) {\r\n        return UniquePIDL(targetPidl);\r\n    }\r\n    CoTaskMemFree(targetPidl);\r\n\r\n    WCHAR rawTargetPath[MAX_PATH] = {};\r\n    result = shellLink->GetPath(rawTargetPath, ARRAYSIZE(rawTargetPath),\r\n                                nullptr, SLGP_RAWPATH);\r\n    if (FAILED(result) || !rawTargetPath[0]) {\r\n        return nullptr;\r\n    }\r\n\r\n    WCHAR expandedTargetPath[MAX_PATH] = {};\r\n    PCWSTR targetPath = rawTargetPath;\r\n    DWORD expandedLength = ExpandEnvironmentStringsW(\r\n        rawTargetPath, expandedTargetPath, ARRAYSIZE(expandedTargetPath));\r\n    if (expandedLength > 0 &&\r\n        expandedLength <= ARRAYSIZE(expandedTargetPath)) {\r\n        targetPath = expandedTargetPath;\r\n    }\r\n\r\n    targetPidl = nullptr;\r\n    result = SHParseDisplayName(targetPath, nullptr, &targetPidl, 0, nullptr);\r\n    if (FAILED(result)) {\r\n        CoTaskMemFree(targetPidl);\r\n        return nullptr;\r\n    }\r\n\r\n    return UniquePIDL(targetPidl);\r\n}\r\n\r\nvoid LogRedirect(PCIDLIST_ABSOLUTE shortcutPidl,\r\n                 PCIDLIST_ABSOLUTE targetPidl) {\r\n    PWSTR shortcutName = nullptr;\r\n    PWSTR targetName = nullptr;\r\n\r\n    SHGetNameFromIDList(shortcutPidl, SIGDN_DESKTOPABSOLUTEPARSING,\r\n                        &shortcutName);\r\n    SHGetNameFromIDList(targetPidl, SIGDN_DESKTOPABSOLUTEPARSING,\r\n                        &targetName);\r\n\r\n    UniqueWideString shortcutNameOwner(shortcutName);\r\n    UniqueWideString targetNameOwner(targetName);\r\n    Wh_Log(L\"Redirecting Open file location: %s -> %s\",\r\n           shortcutName ? shortcutName : L\"(unknown shortcut)\",\r\n           targetName ? targetName : L\"(unknown target)\");\r\n}\r\n\r\nHRESULT HandleSHOpenFolderAndSelectItems(\r\n    SHOpenFolderAndSelectItemsFunction originalFunction,\r\n    PCIDLIST_ABSOLUTE folderPidl,\r\n    UINT childCount,\r\n    PCUITEMID_CHILD_ARRAY childPidls,\r\n    DWORD flags,\r\n    void* returnAddress) {\r\n    if (!folderPidl || childCount != 0 || childPidls ||\r\n        (!s_isSearchProcess && !IsAppResolverCaller(returnAddress))) {\r\n        return originalFunction(folderPidl, childCount, childPidls, flags);\r\n    }\r\n\r\n    UniquePIDL targetPidl = ResolveShellLinkTarget(folderPidl);\r\n    if (!targetPidl || ILIsEqual(folderPidl, targetPidl.get())) {\r\n        return originalFunction(folderPidl, childCount, childPidls, flags);\r\n    }\r\n\r\n    LogRedirect(folderPidl, targetPidl.get());\r\n    HRESULT result = originalFunction(targetPidl.get(), 0, nullptr, flags);\r\n\r\n    if (FAILED(result)) {\r\n        Wh_Log(L\"Opening the shortcut target failed: 0x%08X; using the \"\r\n               L\"original shortcut\",\r\n               static_cast<unsigned int>(result));\r\n        return originalFunction(folderPidl, childCount, childPidls, flags);\r\n    }\r\n\r\n    return result;\r\n}\r\n\r\nHRESULT WINAPI WindowsStorageSHOpenFolderAndSelectItemsHook(\r\n    PCIDLIST_ABSOLUTE folderPidl,\r\n    UINT childCount,\r\n    PCUITEMID_CHILD_ARRAY childPidls,\r\n    DWORD flags) {\r\n    return HandleSHOpenFolderAndSelectItems(\r\n        s_windowsStorageOriginal, folderPidl, childCount, childPidls, flags,\r\n        __builtin_return_address(0));\r\n}\r\n\r\nHRESULT WINAPI Shell32SHOpenFolderAndSelectItemsHook(\r\n    PCIDLIST_ABSOLUTE folderPidl,\r\n    UINT childCount,\r\n    PCUITEMID_CHILD_ARRAY childPidls,\r\n    DWORD flags) {\r\n    return HandleSHOpenFolderAndSelectItems(\r\n        s_shell32Original, folderPidl, childCount, childPidls, flags,\r\n        __builtin_return_address(0));\r\n}\r\n\r\n}  // namespace\r\n\r\nBOOL Wh_ModInit() {\r\n    s_isSearchProcess = GetModuleHandleW(L\"SearchHost.exe\") ||\r\n                        GetModuleHandleW(L\"SearchApp.exe\");\r\n\r\n    s_windowsStorageModule = LoadLibraryExW(\r\n        L\"Windows.Storage.dll\", nullptr, LOAD_LIBRARY_SEARCH_SYSTEM32);\r\n    HMODULE shell32Module = GetModuleHandleW(L\"shell32.dll\");\r\n\r\n    FARPROC windowsStorageProcedure =\r\n        s_windowsStorageModule\r\n            ? GetProcAddress(s_windowsStorageModule,\r\n                             \"SHOpenFolderAndSelectItems\")\r\n            : nullptr;\r\n    FARPROC shell32Procedure =\r\n        shell32Module\r\n            ? GetProcAddress(shell32Module, \"SHOpenFolderAndSelectItems\")\r\n            : nullptr;\r\n\r\n    bool hookInstalled = false;\r\n    if (windowsStorageProcedure) {\r\n        hookInstalled = WindhawkUtils::SetFunctionHook(\r\n            reinterpret_cast<SHOpenFolderAndSelectItemsFunction>(\r\n                windowsStorageProcedure),\r\n            WindowsStorageSHOpenFolderAndSelectItemsHook,\r\n            &s_windowsStorageOriginal);\r\n        if (hookInstalled) {\r\n            Wh_Log(\r\n                L\"Hooked Windows.Storage.dll!SHOpenFolderAndSelectItems\");\r\n        } else {\r\n            Wh_Log(\r\n                L\"Failed to hook Windows.Storage.dll!\"\r\n                L\"SHOpenFolderAndSelectItems\");\r\n        }\r\n    }\r\n\r\n    if (shell32Procedure &&\r\n        shell32Procedure != windowsStorageProcedure) {\r\n        bool shell32HookInstalled = WindhawkUtils::SetFunctionHook(\r\n            reinterpret_cast<SHOpenFolderAndSelectItemsFunction>(\r\n                shell32Procedure),\r\n            Shell32SHOpenFolderAndSelectItemsHook, &s_shell32Original);\r\n        hookInstalled = hookInstalled || shell32HookInstalled;\r\n        if (shell32HookInstalled) {\r\n            Wh_Log(L\"Hooked shell32.dll!SHOpenFolderAndSelectItems\");\r\n        } else {\r\n            Wh_Log(\r\n                L\"Failed to hook shell32.dll!\"\r\n                L\"SHOpenFolderAndSelectItems\");\r\n        }\r\n    }\r\n\r\n    if (!hookInstalled) {\r\n        Wh_Log(L\"No SHOpenFolderAndSelectItems implementation was hooked\");\r\n        ReleaseWindowsStorageModule();\r\n        return FALSE;\r\n    }\r\n\r\n    return TRUE;\r\n}\r\n\r\nvoid Wh_ModUninit() {\r\n    ReleaseWindowsStorageModule();\r\n}\r\n"
+    }
+  ]
+}
