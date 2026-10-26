@@ -1,0 +1,17 @@
+Open Windows Terminal.
+
+Press Ctrl + , to open Settings.
+
+On the Startup page, look at Default Terminal Application.
+
+Make sure it is set to Windows Terminal (not "Let Windows decide" or "Windows Console Host").
+
+Save.
+
+reg file to give nice icon:
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\Applications\bash.exe\DefaultIcon]
+@="C:\\Program Files\\Git\\git-bash.exe,0"
+```

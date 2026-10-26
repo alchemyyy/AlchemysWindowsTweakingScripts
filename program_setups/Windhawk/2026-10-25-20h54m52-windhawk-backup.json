@@ -1,0 +1,415 @@
+{
+  "format": "windhawk-user-data-v1",
+  "appSettings": {
+    "language": "en",
+    "theme": "dark",
+    "disableUpdateCheck": false,
+    "devModeOptOut": false,
+    "hideTrayIcon": false,
+    "alwaysCompileModsLocally": false,
+    "dontAutoShowToolkit": false,
+    "disableToolkitHotkey": false,
+    "modTasksDialogDelay": 2000,
+    "loggingVerbosity": 0,
+    "engine": {
+      "loggingVerbosity": 0,
+      "include": [],
+      "exclude": [],
+      "injectIntoCriticalProcesses": false,
+      "injectIntoIncompatiblePrograms": false,
+      "injectIntoGames": false
+    }
+  },
+  "mods": [
+    {
+      "modId": "context-menu-preloader",
+      "version": "1.0",
+      "name": "Context Menu Preloader",
+      "settings": {
+        "StartupDelay": 5,
+        "CustomExtensions": "pdf; mp4; mkv; docx; obj; html",
+        "EnableDebug": 0
+      }
+    },
+    {
+      "modId": "control-panel-color-fix",
+      "version": "1.0.1",
+      "name": "Control Panel Color Fix",
+      "settings": {
+        "contrastEnabled": 1,
+        "contrastOffset": 22,
+        "useManualRGB": 0,
+        "manualRGB": "54,54,54"
+      }
+    },
+    {
+      "modId": "dark-menus",
+      "version": "1.4.2",
+      "name": "Dark mode context menus",
+      "settings": {
+        "AppMode": "ForceDark",
+        "TranslucentFlyoutsFix": 0
+      }
+    },
+    {
+      "modId": "disable-feedback-hub-hotkey",
+      "version": "1.0.0",
+      "name": "Disable Feedback Hub Hotkey"
+    },
+    {
+      "modId": "extension-change-no-warning",
+      "version": "1.0.1",
+      "name": "Turn off change file extension warning"
+    },
+    {
+      "modId": "file-explorer-remove-suffixes",
+      "version": "1.1.1",
+      "name": "Remove Taskbar Window Suffixes",
+      "settings": {
+        "suffixRemovalMode": "fileExplorerOnly",
+        "suffixRules[0].processIdentifier": "",
+        "suffixRules[0].search": "",
+        "suffixRules[0].replace": ""
+      }
+    },
+    {
+      "modId": "fix-explorer-white-flash",
+      "version": "1.4",
+      "name": "Fix white flashes in explorer"
+    },
+    {
+      "modId": "instant-taskbar-thumbnail-previews",
+      "version": "1.1.0",
+      "name": "Instant Taskbar Thumbnail Previews",
+      "settings": {
+        "delayMs": 1,
+        "closeDelayMs": 1,
+        "thumbnailRemovalDelayMs": 500,
+        "closeOnOutsideClick": 0,
+        "closeOnStartButtonHover": 0
+      }
+    },
+    {
+      "modId": "invisible-borders",
+      "version": "1.0.0",
+      "name": "Invisible Window Borders",
+      "settings": {
+        "SpecialWindows": 0
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "modernize-folder-picker-dialog",
+      "version": "1.0.0",
+      "name": "Modernize Folder Picker Dialog"
+    },
+    {
+      "modId": "remove-ms-store-open-with",
+      "version": "1.0.0",
+      "name": "Open With - Remove Microsoft Store Menu Item"
+    },
+    {
+      "modId": "start-menu-open-real-file-location",
+      "version": "1.1.0",
+      "name": "Start Menu Open Real File Location"
+    },
+    {
+      "modId": "start-menu-size",
+      "version": "1.1",
+      "name": "Start Menu Size",
+      "settings": {
+        "width": 0,
+        "height": 0,
+        "searchWidth": 0,
+        "searchHeight": 0
+      }
+    },
+    {
+      "modId": "start-search-bing-redirector",
+      "version": "1.0.0",
+      "name": "Start Search Bing Redirector",
+      "settings": {
+        "engine": "google",
+        "customTemplate": "https://www.google.com/search?q={q}"
+      }
+    },
+    {
+      "modId": "taskbar-clock-customization",
+      "version": "1.8.1",
+      "name": "Taskbar Clock Customization",
+      "settings": {
+        "ShowSeconds": 1,
+        "TimeFormat": "h':'mm tt",
+        "DateFormat": "M/d/yyyy",
+        "DateLocale": "",
+        "WeekdayFormat": "dddd",
+        "WeekdayFormatCustom": "Sun, Mon, Tue, Wed, Thu, Fri, Sat",
+        "TopLine": "%time%",
+        "BottomLine": "%date%",
+        "MiddleLine": "",
+        "TooltipLine": "",
+        "TooltipLineMode": "append",
+        "Width": 180,
+        "Height": 60,
+        "MaxWidth": 0,
+        "TextSpacing": 0,
+        "DataCollection.NetworkMetricsFormat": "mbs",
+        "DataCollection.NetworkMetricsFixedDecimals": -1,
+        "DataCollection.DiskMetricsFormat": "sameAsNetwork",
+        "DataCollection.DiskMetricsFixedDecimals": -1,
+        "DataCollection.PercentageFormat": "spacePaddingAndSymbol",
+        "DataCollection.UpdateInterval": 1,
+        "DataCollection.NetworkAdapterName": "",
+        "DataCollection.GpuAdapterName": "",
+        "MediaPlayer.IgnoredPlayers[0]": "",
+        "MediaPlayer.MaxLength": 28,
+        "MediaPlayer.MediaInfoFormat": "%media_artist% - %media_title%",
+        "MediaPlayer.NoMediaText": "No media",
+        "MediaPlayer.RemoveBrackets": 0,
+        "WebContentWeatherLocation": "",
+        "WebContentWeatherFormat": "%c 🌡️%t 🌬️%w",
+        "WebContentWeatherUnits": "autoDetect",
+        "WebContentsItems[0].Url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+        "WebContentsItems[0].BlockStart": "<item>",
+        "WebContentsItems[0].Start": "<title>",
+        "WebContentsItems[0].End": "</title>",
+        "WebContentsItems[0].ContentMode": "xmlHtml",
+        "WebContentsItems[0].SearchReplace[0].Search": "",
+        "WebContentsItems[0].SearchReplace[0].Replace": "",
+        "WebContentsItems[0].MaxLength": 28,
+        "WebContentsUpdateInterval": 10,
+        "TimeZones[0]": "Eastern Standard Time",
+        "TimeStyle.Hidden": 0,
+        "TimeStyle.TextColor": "",
+        "TimeStyle.TextAlignment": "Center",
+        "TimeStyle.FontSize": 0,
+        "TimeStyle.FontFamily": "",
+        "TimeStyle.FontWeight": "",
+        "TimeStyle.FontStyle": "",
+        "TimeStyle.FontStretch": "",
+        "TimeStyle.CharacterSpacing": 0,
+        "TimeStyle.LineHeight": 0,
+        "DateStyle.Hidden": 0,
+        "DateStyle.TextColor": "",
+        "DateStyle.TextAlignment": "",
+        "DateStyle.FontSize": 0,
+        "DateStyle.FontFamily": "",
+        "DateStyle.FontWeight": "",
+        "DateStyle.FontStyle": "",
+        "DateStyle.FontStretch": "",
+        "DateStyle.CharacterSpacing": 0,
+        "DateStyle.LineHeight": 0,
+        "oldTaskbarOnWin11": 0
+      }
+    },
+    {
+      "modId": "taskbar-disappearing-tray-icons-fix",
+      "version": "1.2",
+      "name": "Disappearing Tray Icons Fix",
+      "settings": {
+        "initialDelaySeconds": 5,
+        "passiveBroadcast": 1,
+        "intervalSeconds": 60,
+        "excludedProcesses[0]": "steam.exe"
+      }
+    },
+    {
+      "modId": "taskbar-icon-size",
+      "version": "1.3.10",
+      "name": "Taskbar height and icon size",
+      "settings": {
+        "TaskbarHeight": 43,
+        "IconSize": 25,
+        "TaskbarButtonWidth": 41,
+        "IconSizeSmall": 16,
+        "TaskbarButtonWidthSmall": 32
+      }
+    },
+    {
+      "modId": "taskbar-notification-icon-spacing",
+      "version": "1.4",
+      "name": "Taskbar tray icon spacing and grid",
+      "settings": {
+        "notificationIconWidth": 24,
+        "notificationIconRows": 1,
+        "gridArrangement": "rowFirstLeftToRight",
+        "overflowIconWidth": 32,
+        "overflowIconsPerRow": 5
+      }
+    },
+    {
+      "modId": "taskbar-notification-icons-show-all",
+      "version": "1.1",
+      "name": "Always show all taskbar tray icons",
+      "settings": {
+        "mode": "showAll"
+      }
+    },
+    {
+      "modId": "taskbar-on-top",
+      "version": "1.3",
+      "name": "Taskbar on top for Windows 11",
+      "settings": {
+        "taskbarLocation": "top",
+        "taskbarLocationSecondary": "sameAsPrimary",
+        "runningIndicatorsOnTop": 0,
+        "startMenuAnimationAdjust": 0,
+        "useNativeTaskbar": 1
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "taskbar-restart-explorer",
+      "version": "1.0",
+      "name": "Taskbar Restart Explorer"
+    },
+    {
+      "modId": "taskbar-start-button-corner-fix",
+      "version": "2.0",
+      "name": "Start Menu Corner Click Fix",
+      "settings": {
+        "edgeThickness": 5,
+        "edgeLength": 5,
+        "openStartWhenButtonUnavailable": 1
+      }
+    },
+    {
+      "modId": "taskbar-thumbnail-hover-fix",
+      "version": "1.0",
+      "name": "Taskbar Thumbnail Hover Fix"
+    },
+    {
+      "modId": "taskbar-thumbnail-reorder",
+      "version": "1.1.5",
+      "name": "Taskbar Thumbnail Reorder",
+      "settings": {
+        "oldTaskbarOnWin11": 0
+      }
+    },
+    {
+      "modId": "taskbar-thumbnail-size",
+      "version": "1.2.1",
+      "name": "Taskbar Thumbnail Size",
+      "settings": {
+        "size": 150,
+        "useAbsoluteSize": 1,
+        "minWidth": 180,
+        "minHeight": 120,
+        "maxWidth": 180,
+        "maxHeight": 120,
+        "preserveAspectRatio": 0
+      }
+    },
+    {
+      "modId": "taskbar-tray-system-icon-tweaks",
+      "version": "1.3.1",
+      "name": "Taskbar tray system icon tweaks",
+      "settings": {
+        "hideVolumeIcon": 1,
+        "hideNetworkIcon": 1,
+        "hideBatteryIcon": 1,
+        "grayscaleBatteryIcon": 0,
+        "hideMicrophoneIcon": 1,
+        "hideGeolocationIcon": 1,
+        "hideStudioEffectsIcon": 1,
+        "hideRecallIcon": 0,
+        "hideLanguageBar": 1,
+        "hideLanguageSupplementaryIcons": 1,
+        "hideBellIcon": "never",
+        "showDesktopButtonWidth": 12
+      }
+    },
+    {
+      "modId": "taskbar-wheel-cycle",
+      "version": "1.1.11",
+      "name": "Cycle taskbar buttons with mouse wheel",
+      "settings": {
+        "skipMinimizedWindows": 1,
+        "wrapAround": 1,
+        "reverseScrollingDirection": 0,
+        "enableMouseWheelCycling": 1,
+        "customScrollRegions": "",
+        "cycleLeftKeyboardShortcut": "Alt+VK_OEM_4",
+        "cycleRightKeyboardShortcut": "Alt+VK_OEM_6",
+        "oldTaskbarOnWin11": 0
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "taskmgr-link-speed",
+      "version": "1.0.0",
+      "name": "Task Manager Show Link Speed",
+      "settings": {
+        "CustomLabelOverrideEnabled": 0,
+        "CustomLabelOverrideText": ""
+      }
+    },
+    {
+      "modId": "windows-11-file-explorer-styler",
+      "version": "1.7.2",
+      "name": "Windows 11 File Explorer Styler",
+      "settings": {
+        "theme": "",
+        "backgroundTranslucentEffect": "",
+        "backgroundTranslucentEffectRegion": "",
+        "styleConstants[0]": "",
+        "controlStyles[0].target": "Microsoft.UI.Xaml.Controls.AppBarButton#backButton",
+        "controlStyles[0].styles[0]": "Margin=0,8,0,0",
+        "controlStyles[0].styles[1]": "Width=37",
+        "controlStyles[1].target": "Microsoft.UI.Xaml.Controls.AppBarButton#forwardButton",
+        "controlStyles[1].styles[0]": "Margin=0,8,0,0",
+        "controlStyles[1].styles[1]": "Width=37",
+        "controlStyles[2].target": "Microsoft.UI.Xaml.Controls.AppBarButton#upButton",
+        "controlStyles[2].styles[0]": "Margin=0,8,0,0",
+        "controlStyles[2].styles[1]": "Width=37",
+        "controlStyles[3].target": "Microsoft.UI.Xaml.Controls.AppBarButton#refreshButton",
+        "controlStyles[3].styles[0]": "Margin=0,8,0,0",
+        "controlStyles[3].styles[1]": "Width=37",
+        "themeResourceVariables[0]": "",
+        "explorerFrameContainerHeight": 0,
+        "xamlDiagnosticsHandling": "alert"
+      }
+    },
+    {
+      "modId": "windows-11-start-menu-styler",
+      "version": "1.7",
+      "name": "Windows 11 Start Menu Styler",
+      "settings": {
+        "theme": "Windows11_Metro10",
+        "disableNewStartMenuLayout": "0",
+        "styleConstants[0]": "",
+        "controlStyles[0].target": "",
+        "controlStyles[0].styles[0]": "",
+        "themeResourceVariables[0]": "",
+        "webContentStyles[0].target": "",
+        "webContentStyles[0].styles[0]": "",
+        "webContentCustomJs": ""
+      }
+    },
+    {
+      "modId": "windows-11-taskbar-styler",
+      "version": "1.10",
+      "name": "Windows 11 Taskbar Styler",
+      "settings": {
+        "theme": "",
+        "styleConstants[0]": "",
+        "controlStyles[0].target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Border#BackgroundElement",
+        "controlStyles[0].styles[0]": "Background:=<ImageBrush Stretch=\"Uniform\" ImageSource=\"file:///C:/Windows/OrbWin10.png\" />",
+        "controlStyles[1].target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer#Icon",
+        "controlStyles[1].styles[0]": "Visibility=Collapsed",
+        "themeResourceVariables[0]": "",
+        "clickThroughTaskbar": 0,
+        "xamlDiagnosticsHandling": "alert"
+      },
+      "config": {
+        "disabled": true
+      }
+    }
+  ]
+}
