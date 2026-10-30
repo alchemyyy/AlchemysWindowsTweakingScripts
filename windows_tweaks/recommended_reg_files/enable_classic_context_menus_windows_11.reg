@@ -1,9 +1,33 @@
 Windows Registry Editor Version 5.00
 
-#disable windows11 new context menu and enable w11 classic context menu
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FeatureManagement\Overrides\4\586118283]
+#disable windows11 new context menu and enable w11 classic context menu (restart to apply)
+#user priority (8) feature overrides, same as vivetool /disable, so windows feature rollouts can't turn them back on
+#29704337 CuratedHMenuContextMenu: windows 11 context menu
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FeatureManagement\Overrides\8\586118283]
 "EnabledState"=dword:00000001
-"EnabledStateOptions"=dword:00000001
+"EnabledStateOptions"=dword:00000000
+"Variant"=dword:00000000
+"VariantPayload"=dword:00000000
+"VariantPayloadKind"=dword:00000000
+
+#60813048, 49453572, 61934903: redesigned context menu from the november 2026 update (KB5127936)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FeatureManagement\Overrides\8\4055089295]
+"EnabledState"=dword:00000001
+"EnabledStateOptions"=dword:00000000
+"Variant"=dword:00000000
+"VariantPayload"=dword:00000000
+"VariantPayloadKind"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FeatureManagement\Overrides\8\156965516]
+"EnabledState"=dword:00000001
+"EnabledStateOptions"=dword:00000000
+"Variant"=dword:00000000
+"VariantPayload"=dword:00000000
+"VariantPayloadKind"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FeatureManagement\Overrides\8\1853201550]
+"EnabledState"=dword:00000001
+"EnabledStateOptions"=dword:00000000
 "Variant"=dword:00000000
 "VariantPayload"=dword:00000000
 "VariantPayloadKind"=dword:00000000

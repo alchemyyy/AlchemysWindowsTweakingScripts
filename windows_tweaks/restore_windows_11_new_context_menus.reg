@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+#undo enable_classic_context_menus_windows_11.reg: remove its feature overrides to restore the windows11 context menus (restart to apply)
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FeatureManagement\Overrides\8\586118283]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FeatureManagement\Overrides\8\4055089295]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FeatureManagement\Overrides\8\156965516]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FeatureManagement\Overrides\8\1853201550]
+
+#older versions of enable_classic_context_menus_windows_11.reg wrote this key instead
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FeatureManagement\Overrides\4\586118283]
