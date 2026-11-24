@@ -1,23 +1,21 @@
 @echo off
-setlocal EnableDelayedExpansion
+setlocal DisableDelayedExpansion
+
+:: Turns each line of aliases.txt into a one-line .cmd shim in SHIM_DIR and appends
+:: SHIM_DIR to the END of the user PATH. No per-console startup cost (unlike doskey
+:: via AutoRun), and any real program with the same name takes precedence.
+:: The shim folder is regenerated from scratch on every run: aliases.txt is the
+:: single source of truth. No admin required.
 
 :: === Configuration ===
-set "DOSKEY_FILE=C:\Windows\cmd_aliases.cmd"
+set "SHIM_DIR=C:\Tools\AlchemysCMDMacros"
 set "ALIASES_FILE=%~dp0aliases.txt"
+set "PATH_HELPER=%~dp0path_helper.ps1"
+:: cmd internal commands: always resolved before PATH, so shims with these names never run.
+set "BUILTINS=assoc break call cd chdir cls color copy date del dir dpath echo endlocal erase exit for ftype goto if keys md mkdir mklink move path pause popd prompt pushd rd rem ren rename rmdir set setlocal shift start time title type ver verify vol"
 
-:: === Change to script directory (suppresses drive errors) ===
 cd /d "%~dp0" 2>nul
 
-:: === Check for admin privileges ===
-net session >nul 2>&1
-if %errorlevel% neq 0 (
-    echo [ERROR] This script requires administrator privileges.
-    echo         Right-click and select "Run as administrator"
-    pause
-    exit /b 1
-)
-
-:: === Check aliases.txt exists ===
 if not exist "%ALIASES_FILE%" (
     echo [ERROR] aliases.txt not found at: %ALIASES_FILE%
     pause
@@ -29,104 +27,78 @@ echo   CMD Aliases Installer
 echo ============================================
 echo.
 
-:: === Load existing aliases into environment variables ===
-set "count_existing=0"
-if exist "%DOSKEY_FILE%" (
-    echo [INFO] Loading existing aliases...
-    for /f "usebackq tokens=1,* delims= " %%A in ("%DOSKEY_FILE%") do (
-        if /i "%%A"=="doskey" (
-            for /f "tokens=1 delims==" %%N in ("%%B") do (
-                set "existing_%%N=%%B"
-                set /a count_existing+=1
-            )
-        )
-    )
-    echo       Found !count_existing! existing aliases.
+:: === Regenerate shim folder ===
+if exist "%SHIM_DIR%" rd /s /q "%SHIM_DIR%"
+mkdir "%SHIM_DIR%" 2>nul
+if not exist "%SHIM_DIR%" (
+    echo [ERROR] Could not create %SHIM_DIR%
+    pause
+    exit /b 1
 )
 
-:: === Load new aliases from txt file ===
-echo [INFO] Loading aliases from aliases.txt...
-set "count_new=0"
-set "count_updated=0"
-
-for /f "usebackq tokens=* eol=#" %%L in ("%ALIASES_FILE%") do (
-    set "line=%%L"
-    if not "!line!"=="" (
-        for /f "tokens=1 delims==" %%N in ("!line!") do (
-            set "alias_name=%%N"
-            
-            :: Check if exists and if value changed
-            if defined existing_!alias_name! (
-                set "old_val=!existing_%alias_name%!"
-                if "!old_val!"=="!line!" (
-                    rem Same value, no change
-                ) else (
-                    echo [UPDATE] !alias_name!
-                    set /a count_updated+=1
-                )
-                :: Clear so we know it's been processed
-                set "existing_!alias_name!="
-            ) else (
-                echo [NEW] !alias_name!
-                set /a count_new+=1
-            )
-            
-            :: Store the alias for final output
-            set "final_!alias_name!=!line!"
-        )
+echo [INFO] Writing shims to %SHIM_DIR%...
+:: No CALL with alias bodies and no delayed expansion: either would mangle % and ! in them.
+for /f "usebackq eol=# tokens=1,* delims==" %%A in ("%ALIASES_FILE%") do (
+    call :check_name "%%A"
+    if errorlevel 2 (
+        echo [SKIP] %%A ^(name may only contain letters, digits, _ and -^)
+    ) else if errorlevel 1 (
+        echo [SKIP] %%A ^(cmd built-in, would never run^)
+    ) else (
+        >"%SHIM_DIR%\%%A.cmd" echo(@%%B
     )
 )
 
-:: === Preserve aliases that were in existing file but not in txt ===
-set "count_preserved=0"
-for /f "tokens=1,* delims==" %%N in ('set existing_ 2^>nul') do (
-    set "varname=%%N"
-    set "varvalue=%%O"
-    :: Extract actual alias name (remove "existing_" prefix)
-    set "pname=!varname:existing_=!"
-    if defined varvalue (
-        if not defined final_!pname! (
-            set "final_!pname!=!varvalue!"
-            echo [KEEP] !pname!
-            set /a count_preserved+=1
-        )
+:: === PATH ===
+echo [INFO] Adding %SHIM_DIR% to the end of the user PATH...
+powershell -NoProfile -ExecutionPolicy Bypass -File "%PATH_HELPER%" -Action Add -Dir "%SHIM_DIR%"
+if errorlevel 1 echo [ERROR] Failed to update user PATH.
+
+:: === Report shims overridden by earlier PATH entries (expected, informational) ===
+set "PATH=%PATH%;%SHIM_DIR%"
+for %%F in ("%SHIM_DIR%\*.cmd") do call :report_override "%%~nF"
+
+:: === Clean up previous doskey-based installs ===
+reg query "HKCU\Software\Microsoft\Command Processor" /v AutoRun 2>nul | findstr /i "cmd_aliases" >nul
+if not errorlevel 1 (
+    reg delete "HKCU\Software\Microsoft\Command Processor" /v AutoRun /f >nul 2>&1
+    echo [OK] Removed old doskey AutoRun value.
+)
+if exist "%LOCALAPPDATA%\cmd_aliases" (
+    rd /s /q "%LOCALAPPDATA%\cmd_aliases"
+    echo [OK] Removed old %LOCALAPPDATA%\cmd_aliases.
+)
+if exist "C:\Windows\cmd_aliases.cmd" (
+    del /f "C:\Windows\cmd_aliases.cmd" >nul 2>&1
+    if exist "C:\Windows\cmd_aliases.cmd" (
+        echo [WARN] Could not delete C:\Windows\cmd_aliases.cmd ^(needs admin^). It is no longer used.
+    ) else (
+        echo [OK] Removed old C:\Windows\cmd_aliases.cmd.
     )
 )
 
-:: === Write final doskey file ===
-echo.
-echo [INFO] Writing %DOSKEY_FILE%...
-
-:: Write header
-echo @echo off>"%DOSKEY_FILE%"
-
-:: Write all aliases
-for /f "tokens=1,* delims==" %%N in ('set final_ 2^>nul') do (
-    set "fullvalue=%%O"
-    echo doskey !fullvalue!>>"%DOSKEY_FILE%"
-)
-
-:: === Set up registry ===
-echo [INFO] Setting up registry AutoRun...
-reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun /t REG_SZ /d "%DOSKEY_FILE%" /f >nul 2>&1
-if %errorlevel% equ 0 (
-    echo [OK] Registry updated successfully.
-) else (
-    echo [ERROR] Failed to update registry.
-)
-
-:: === Summary ===
 echo.
 echo ============================================
 echo   Installation Complete
 echo ============================================
-echo   New aliases:       %count_new%
-echo   Updated aliases:   %count_updated%
-echo   Preserved aliases: %count_preserved%
-echo.
-echo   Doskey file: %DOSKEY_FILE%
-echo   Open a new CMD window to use your aliases.
+echo   Shim folder: %SHIM_DIR%
+echo   Open a NEW terminal window/tab to pick up the PATH change.
 echo   Type 'alias' to see all available commands.
 echo ============================================
 echo.
 pause
+exit /b 0
+
+:: %1 = quoted alias name. errorlevel 0 = ok, 1 = cmd built-in, 2 = invalid characters.
+:check_name
+echo(%~1| findstr /r /x "[A-Za-z0-9_-]*" >nul || exit /b 2
+for %%I in (%BUILTINS%) do if /i "%~1"=="%%I" exit /b 1
+exit /b 0
+
+:: %1 = quoted alias name. Reports the first PATH match if it isn't our shim.
+:report_override
+for /f "delims=" %%W in ('where "$PATH:%~1" 2^>nul') do (
+    if /i not "%%~dpW"=="%SHIM_DIR%\" echo [OVERRIDDEN] %~1 -^> %%W
+    exit /b 0
+)
+exit /b 0

@@ -1,6 +1,7 @@
-# Restores the Microsoft.AIFabric.CBS framework package that RemoveWindowsAI removes, and stops RemoveWindowsAI's
-# update-cleanup logon task from removing it again. On Windows 11 25H2 (26200.9278 and later) File Explorer depends on
-# it. Without it Explorer falls back to the Windows 10 ribbon UI, which only has the classic context menu.
+# Restores the Microsoft.AIFabric.CBS framework package that RemoveWindowsAI removes, and deletes RemoveWindowsAI's
+# update-cleanup logon task, which would remove it again after Windows updates. On Windows 11 25H2 (26200.9278 and
+# later) File Explorer depends on it. Without it Explorer falls back to the Windows 10 ribbon UI, which only has the
+# classic context menu.
 # If RemoveWindowsAI deleted the package files, they're rebuilt from the copy Windows keeps in its component store (WinSxS).
 # auto_dl_and_apply_RemoveWindowsAI.ps1 runs this after every RemoveWindowsAI run.
 
@@ -15,15 +16,16 @@ if (-not $isAdmin) {
     exit 1
 }
 
-# The logon task re-runs RemoveWindowsAI's removal list after every Windows update.
-$cleanupScript = "$env:ProgramData\RemoveAI-UpdateCleanup.ps1"
-if (Test-Path -LiteralPath $cleanupScript) {
-    $text = [IO.File]::ReadAllText($cleanupScript)
-    $patched = $text -replace "(?m)^([ \t]*)'(Microsoft\.AIFabric\.CBS\*?)'", '$1#''$2'' kept: File Explorer depends on it'
-    $patched = $patched -replace "(?m)^([ \t]*)(Set-FeatureID -disable -FeatureId (?:58375086|63366798|58375066|61199980|40012896)\b)", '$1#$2 skipped: only needed when Microsoft.AIFabric.CBS is removed'
-    if ($patched -ne $text) {
-        [IO.File]::WriteAllText($cleanupScript, $patched)
-        Write-Host "Kept Microsoft.AIFabric.CBS in RemoveWindowsAI's update cleanup task ($cleanupScript)" -ForegroundColor Green
+# RemoveWindowsAI's UpdateCleanupCheck option installs a SYSTEM logon task that re-runs a frozen copy of its removal list
+# after every Windows update. Delete the task and its script, as RemoveWindowsAI's own revert does.
+if (Get-ScheduledTask -TaskPath '\' -TaskName 'RemoveAI-UpdateCleanupChecker' -ErrorAction SilentlyContinue) {
+    Unregister-ScheduledTask -TaskPath '\' -TaskName 'RemoveAI-UpdateCleanupChecker' -Confirm:$false
+    Write-Host "Deleted RemoveWindowsAI's update cleanup logon task" -ForegroundColor Green
+}
+foreach ($file in "$env:ProgramData\RemoveAI-UpdateCleanup.ps1", "$env:ProgramData\RemoveAI-UpdateCleanup-Silent.vbs") {
+    if (Test-Path -LiteralPath $file) {
+        Remove-Item -LiteralPath $file -Force
+        Write-Host "Deleted $file" -ForegroundColor Green
     }
 }
 

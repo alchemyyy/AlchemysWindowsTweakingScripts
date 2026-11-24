@@ -4,8 +4,10 @@
 #   ribbon UI and classic context menu. The feature overrides RemoveWindowsAI applies for that removal are skipped too.
 # - PreventAIPackageReinstall is not run. Its update-blocker package (ZoicwareRemoveWindowsAI 1.0.0.1) replaces the
 #   Microsoft.AIFabric.CBS component.
-# Afterwards undo_RemoveWindowsAI_AIFabric_removal.ps1 makes sure Microsoft.AIFabric.CBS is registered and that
-# RemoveWindowsAI's update-cleanup logon task keeps it.
+# - UpdateCleanupCheck is not run. It installs a SYSTEM logon task that re-runs a frozen copy of the removal list after
+#   every Windows update. Run this script again after updates instead; it always uses the latest RemoveWindowsAI.
+# Afterwards undo_RemoveWindowsAI_AIFabric_removal.ps1 makes sure Microsoft.AIFabric.CBS is registered and deletes the
+# update-cleanup logon task left by earlier RemoveWindowsAI runs.
 
 $sourceUrl = 'https://raw.githubusercontent.com/zoicware/RemoveWindowsAI/main/RemoveWindowsAi.ps1'
 $options = @(
@@ -18,7 +20,6 @@ $options = @(
     'HideAIComponents'
     'DisableRewrite'
     'RemoveWindowsAITasks'
-    'UpdateCleanupCheck'
 )
 
 # RemoveWindowsAI requires Windows PowerShell 5.1 and administrator privileges.

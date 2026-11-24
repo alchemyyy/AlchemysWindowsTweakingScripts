@@ -1,42 +1,46 @@
 # CMD Aliases Configuration
-# Format: alias_name=command
-# Lines starting with # are comments
-# Blank lines are ignored
+# Format: name=command
+#   Each line becomes C:\Tools\AlchemysCMDMacros\name.cmd containing "@command".
+#   The command is one line of batch syntax: %* = all arguments, %1 %2 ... / %~1 = single
+#   arguments, %%X = FOR variables, %VAR% expands when the alias runs.
+# Names: letters, digits, _ and - only. cmd built-ins (dir, cd, rmdir, copy, ...) can't be
+#   overridden and are skipped by the installer.
+# The folder is at the END of PATH: any real program with the same name takes precedence.
+# Lines starting with # are comments. Blank lines are ignored.
 
 # === CUSTOM ===
 delnul=del "\\?\%CD%\nul"
-gcr=git clone --recursive $*
+gcr=git clone --recursive %*
 
 # === DIRECTORY LISTING ===
-ls=dir /b $*
-ll=dir $*
-la=dir /a $*
-lt=dir /od $*
+ls=dir /b %*
+ll=dir %*
+la=dir /a %*
+lt=dir /od %*
 
 # === NAVIGATION ===
-..=cd ..
-...=cd ..\..\
-....=cd ..\..\..\
-~=cd %USERPROFILE%
-home=cd %USERPROFILE%
+up=cd ..
+up2=cd ..\..
+up3=cd ..\..\..
+home=cd /d "%USERPROFILE%"
 
 # === FILE OPERATIONS ===
-cat=type $*
-cp=copy $*
-mv=move $*
-rm=del $*
-rmdir=rd /s /q $*
-touch=copy nul $1
+cat=type %*
+cp=copy %*
+mv=move %*
+rm=del %*
+rmrf=rd /s /q %*
+touch=if exist "%~1" (copy /b "%~1"+,, "%~1" >nul) else (type nul > "%~1")
 
 # === SYSTEM ===
 clear=cls
 pwd=cd
-ps=tasklist $*
-kill=taskkill /PID $*
-killall=taskkill /f /im $*
-grep=findstr /i $*
-man=help $*
+ps=tasklist %*
+kill=taskkill /PID %*
+killall=taskkill /f /im %*
+grep=findstr /i %*
+man=help %*
 history=doskey /history
-which=where $*
-ifconfig=ipconfig $*
-alias=doskey /macros
+which=where %*
+ifconfig=ipconfig %*
+alias=for %%F in ("%~dp0*.cmd") do @for /f "usebackq tokens=* delims=@" %%L in ("%%F") do @echo %%~nF = %%L

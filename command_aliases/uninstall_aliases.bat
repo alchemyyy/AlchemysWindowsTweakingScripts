@@ -2,26 +2,17 @@
 setlocal
 
 :: === Configuration ===
-set "DOSKEY_FILE=C:\Windows\cmd_aliases.cmd"
-
-:: === Check for admin privileges ===
-net session >nul 2>&1
-if %errorlevel% neq 0 (
-    echo [ERROR] This script requires administrator privileges.
-    echo         Right-click and select "Run as administrator"
-    pause
-    exit /b 1
-)
+set "SHIM_DIR=C:\Tools\AlchemysCMDMacros"
+set "PATH_HELPER=%~dp0path_helper.ps1"
 
 echo ============================================
 echo   CMD Aliases Uninstaller
 echo ============================================
 echo.
 
-:: === Confirm ===
 echo This will remove:
-echo   - Registry key: HKCU\Software\Microsoft\Command Processor\AutoRun
-echo   - Doskey file:  %DOSKEY_FILE%
+echo   - Shim folder:     %SHIM_DIR%
+echo   - User PATH entry: %SHIM_DIR%
 echo.
 set /p "confirm=Are you sure? (Y/N): "
 if /i not "%confirm%"=="Y" (
@@ -32,35 +23,29 @@ if /i not "%confirm%"=="Y" (
 
 echo.
 
-:: === Remove registry key ===
-echo [INFO] Removing registry AutoRun value...
-reg delete "HKCU\Software\Microsoft\Command Processor" /v AutoRun /f >nul 2>&1
-if %errorlevel% equ 0 (
-    echo [OK] Registry value removed.
-) else (
-    echo [WARN] Registry value not found or already removed.
-)
-
-:: === Delete doskey file ===
-echo [INFO] Deleting doskey file...
-if exist "%DOSKEY_FILE%" (
-    del /f "%DOSKEY_FILE%" >nul 2>&1
-    if exist "%DOSKEY_FILE%" (
-        echo [ERROR] Failed to delete %DOSKEY_FILE%
+echo [INFO] Deleting shim folder...
+if exist "%SHIM_DIR%" (
+    rd /s /q "%SHIM_DIR%" >nul 2>&1
+    if exist "%SHIM_DIR%" (
+        echo [ERROR] Failed to delete %SHIM_DIR%
     ) else (
-        echo [OK] Doskey file deleted.
+        echo [OK] Shim folder deleted.
     )
 ) else (
-    echo [WARN] Doskey file not found or already deleted.
+    echo [WARN] Shim folder not found or already deleted.
 )
+:: Remove C:\Tools too, but only if nothing else lives there (rd without /s fails otherwise).
+for %%P in ("%SHIM_DIR%\..") do rd "%%~fP" >nul 2>&1
 
-:: === Done ===
+echo [INFO] Removing %SHIM_DIR% from user PATH...
+powershell -NoProfile -ExecutionPolicy Bypass -File "%PATH_HELPER%" -Action Remove -Dir "%SHIM_DIR%"
+if errorlevel 1 echo [ERROR] Failed to update user PATH.
+
 echo.
 echo ============================================
 echo   Uninstallation Complete
 echo ============================================
-echo   CMD aliases have been removed.
-echo   Open a new CMD window to verify.
+echo   Open a NEW terminal window/tab to verify.
 echo ============================================
 echo.
 pause
