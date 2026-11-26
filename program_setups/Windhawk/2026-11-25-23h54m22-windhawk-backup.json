@@ -1,0 +1,438 @@
+{
+  "format": "windhawk-user-data-v1",
+  "appSettings": {
+    "language": "en",
+    "theme": "dark",
+    "disableUpdateCheck": false,
+    "devModeOptOut": false,
+    "hideTrayIcon": false,
+    "alwaysCompileModsLocally": false,
+    "dontAutoShowToolkit": false,
+    "disableToolkitHotkey": false,
+    "modTasksDialogDelay": 2000,
+    "loggingVerbosity": 0,
+    "engine": {
+      "loggingVerbosity": 0,
+      "include": [],
+      "exclude": [],
+      "injectIntoCriticalProcesses": false,
+      "injectIntoIncompatiblePrograms": false,
+      "injectIntoGames": false
+    }
+  },
+  "mods": [
+    {
+      "modId": "context-menu-preloader",
+      "version": "1.0",
+      "name": "Context Menu Preloader",
+      "settings": {
+        "StartupDelay": 5,
+        "CustomExtensions": "pdf; mp4; mkv; docx; obj; html",
+        "EnableDebug": 0
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "control-panel-color-fix",
+      "version": "1.0.1",
+      "name": "Control Panel Color Fix",
+      "settings": {
+        "contrastEnabled": 1,
+        "contrastOffset": 22,
+        "useManualRGB": 0,
+        "manualRGB": "54,54,54"
+      }
+    },
+    {
+      "modId": "dark-menus",
+      "version": "1.4.2",
+      "name": "Dark mode context menus",
+      "settings": {
+        "AppMode": "ForceDark",
+        "TranslucentFlyoutsFix": 0
+      }
+    },
+    {
+      "modId": "disable-feedback-hub-hotkey",
+      "version": "1.0.0",
+      "name": "Disable Feedback Hub Hotkey"
+    },
+    {
+      "modId": "extension-change-no-warning",
+      "version": "1.0.1",
+      "name": "Turn off change file extension warning"
+    },
+    {
+      "modId": "file-explorer-remove-suffixes",
+      "version": "1.1.1",
+      "name": "Remove Taskbar Window Suffixes",
+      "settings": {
+        "suffixRemovalMode": "fileExplorerOnly",
+        "suffixRules[0].processIdentifier": "",
+        "suffixRules[0].search": "",
+        "suffixRules[0].replace": ""
+      }
+    },
+    {
+      "modId": "fix-explorer-white-flash",
+      "version": "1.4",
+      "name": "Fix white flashes in explorer"
+    },
+    {
+      "modId": "instant-taskbar-thumbnail-previews",
+      "version": "1.2.1",
+      "name": "Instant Taskbar Thumbnail Previews",
+      "settings": {
+        "delayMs": 1,
+        "closeDelayMs": 1,
+        "thumbnailRemovalDelayMs": 500,
+        "closeOnOutsideClick": 1,
+        "closeOnStartButtonHover": 1,
+        "aimTowardPreviews": 1,
+        "aimAnchorHeightPercent": 100
+      }
+    },
+    {
+      "modId": "invisible-borders",
+      "version": "1.0.0",
+      "name": "Invisible Window Borders",
+      "settings": {
+        "SpecialWindows": 0
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "modernize-folder-picker-dialog",
+      "version": "1.0.0",
+      "name": "Modernize Folder Picker Dialog"
+    },
+    {
+      "modId": "remove-ms-store-open-with",
+      "version": "1.0.0",
+      "name": "Open With - Remove Microsoft Store Menu Item"
+    },
+    {
+      "modId": "start-menu-open-real-file-location",
+      "version": "1.1.0",
+      "name": "Start Menu Open Real File Location"
+    },
+    {
+      "modId": "start-menu-size",
+      "version": "1.1",
+      "name": "Start Menu Size",
+      "settings": {
+        "width": 0,
+        "height": 0,
+        "searchWidth": 0,
+        "searchHeight": 0
+      }
+    },
+    {
+      "modId": "start-search-bing-redirector",
+      "version": "1.0.0",
+      "name": "Start Search Bing Redirector",
+      "settings": {
+        "engine": "google",
+        "customTemplate": "https://www.google.com/search?q={q}"
+      }
+    },
+    {
+      "modId": "taskbar-clock-customization",
+      "version": "1.8.1",
+      "name": "Taskbar Clock Customization",
+      "settings": {
+        "ShowSeconds": 1,
+        "TimeFormat": "h':'mm tt",
+        "DateFormat": "M/d/yyyy",
+        "DateLocale": "",
+        "WeekdayFormat": "dddd",
+        "WeekdayFormatCustom": "Sun, Mon, Tue, Wed, Thu, Fri, Sat",
+        "TopLine": "%time%",
+        "BottomLine": "%date%",
+        "MiddleLine": "",
+        "TooltipLine": "",
+        "TooltipLineMode": "append",
+        "Width": 180,
+        "Height": 60,
+        "MaxWidth": 0,
+        "TextSpacing": 0,
+        "DataCollection.NetworkMetricsFormat": "mbs",
+        "DataCollection.NetworkMetricsFixedDecimals": -1,
+        "DataCollection.DiskMetricsFormat": "sameAsNetwork",
+        "DataCollection.DiskMetricsFixedDecimals": -1,
+        "DataCollection.PercentageFormat": "spacePaddingAndSymbol",
+        "DataCollection.UpdateInterval": 1,
+        "DataCollection.NetworkAdapterName": "",
+        "DataCollection.GpuAdapterName": "",
+        "MediaPlayer.IgnoredPlayers[0]": "",
+        "MediaPlayer.MaxLength": 28,
+        "MediaPlayer.MediaInfoFormat": "%media_artist% - %media_title%",
+        "MediaPlayer.NoMediaText": "No media",
+        "MediaPlayer.RemoveBrackets": 0,
+        "WebContentWeatherLocation": "",
+        "WebContentWeatherFormat": "%c 🌡️%t 🌬️%w",
+        "WebContentWeatherUnits": "autoDetect",
+        "WebContentsItems[0].Url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+        "WebContentsItems[0].BlockStart": "<item>",
+        "WebContentsItems[0].Start": "<title>",
+        "WebContentsItems[0].End": "</title>",
+        "WebContentsItems[0].ContentMode": "xmlHtml",
+        "WebContentsItems[0].SearchReplace[0].Search": "",
+        "WebContentsItems[0].SearchReplace[0].Replace": "",
+        "WebContentsItems[0].MaxLength": 28,
+        "WebContentsUpdateInterval": 10,
+        "TimeZones[0]": "Eastern Standard Time",
+        "TimeStyle.Hidden": 0,
+        "TimeStyle.TextColor": "",
+        "TimeStyle.TextAlignment": "Center",
+        "TimeStyle.FontSize": 0,
+        "TimeStyle.FontFamily": "",
+        "TimeStyle.FontWeight": "",
+        "TimeStyle.FontStyle": "",
+        "TimeStyle.FontStretch": "",
+        "TimeStyle.CharacterSpacing": 0,
+        "TimeStyle.LineHeight": 0,
+        "DateStyle.Hidden": 0,
+        "DateStyle.TextColor": "",
+        "DateStyle.TextAlignment": "",
+        "DateStyle.FontSize": 0,
+        "DateStyle.FontFamily": "",
+        "DateStyle.FontWeight": "",
+        "DateStyle.FontStyle": "",
+        "DateStyle.FontStretch": "",
+        "DateStyle.CharacterSpacing": 0,
+        "DateStyle.LineHeight": 0,
+        "oldTaskbarOnWin11": 0
+      }
+    },
+    {
+      "modId": "taskbar-disappearing-tray-icons-fix",
+      "version": "1.2",
+      "name": "Disappearing Tray Icons Fix",
+      "settings": {
+        "initialDelaySeconds": 5,
+        "passiveBroadcast": 1,
+        "intervalSeconds": 60,
+        "excludedProcesses[0]": "steam.exe"
+      }
+    },
+    {
+      "modId": "taskbar-icon-size",
+      "version": "1.3.11",
+      "name": "Taskbar height and icon size",
+      "settings": {
+        "TaskbarHeight": 43,
+        "IconSize": 25,
+        "TaskbarButtonWidth": 41,
+        "IconSizeSmall": 16,
+        "TaskbarButtonWidthSmall": 32
+      }
+    },
+    {
+      "modId": "taskbar-notification-icon-spacing",
+      "version": "1.5",
+      "name": "Taskbar tray icon spacing and grid",
+      "settings": {
+        "notificationIconWidth": 24,
+        "notificationIconRows": 1,
+        "gridArrangement": "rowFirstLeftToRight",
+        "overflowIconWidth": 32,
+        "overflowIconsPerRow": 5
+      }
+    },
+    {
+      "modId": "taskbar-notification-icons-show-all",
+      "version": "1.1",
+      "name": "Always show all taskbar tray icons",
+      "settings": {
+        "mode": "showAll"
+      }
+    },
+    {
+      "modId": "taskbar-on-top",
+      "version": "1.3.1",
+      "name": "Taskbar on top for Windows 11",
+      "settings": {
+        "taskbarLocation": "top",
+        "taskbarLocationSecondary": "sameAsPrimary",
+        "runningIndicatorsOnTop": 0,
+        "startMenuAnimationAdjust": 0,
+        "useNativeTaskbar": 1
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "taskbar-restart-explorer",
+      "version": "1.0",
+      "name": "Taskbar Restart Explorer"
+    },
+    {
+      "modId": "taskbar-start-button-corner-fix",
+      "version": "2.1",
+      "name": "Start Menu Corner Click Fix",
+      "settings": {
+        "edgeThickness": 5,
+        "edgeLength": 5,
+        "openStartWhenButtonUnavailable": 1
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "taskbar-thumbnail-hover-fix",
+      "version": "1.0",
+      "name": "Taskbar Thumbnail Hover Fix"
+    },
+    {
+      "modId": "taskbar-thumbnail-reorder",
+      "version": "1.1.5",
+      "name": "Taskbar Thumbnail Reorder",
+      "settings": {
+        "oldTaskbarOnWin11": 0
+      }
+    },
+    {
+      "modId": "taskbar-thumbnail-size",
+      "version": "1.2.1",
+      "name": "Taskbar Thumbnail Size",
+      "settings": {
+        "size": 150,
+        "useAbsoluteSize": 1,
+        "minWidth": 180,
+        "minHeight": 120,
+        "maxWidth": 180,
+        "maxHeight": 120,
+        "preserveAspectRatio": 0
+      }
+    },
+    {
+      "modId": "taskbar-tray-system-icon-tweaks",
+      "version": "1.3.2",
+      "name": "Taskbar tray system icon tweaks",
+      "settings": {
+        "hideVolumeIcon": 1,
+        "hideNetworkIcon": 1,
+        "hideBatteryIcon": 1,
+        "grayscaleBatteryIcon": 0,
+        "hideMicrophoneIcon": 1,
+        "hideGeolocationIcon": 1,
+        "hideStudioEffectsIcon": 1,
+        "hideRecallIcon": 0,
+        "hideLanguageBar": 1,
+        "hideLanguageSupplementaryIcons": 1,
+        "hideBellIcon": "never",
+        "showDesktopButtonWidth": 12
+      }
+    },
+    {
+      "modId": "taskbar-wheel-cycle",
+      "version": "1.1.12",
+      "name": "Cycle taskbar buttons with mouse wheel",
+      "settings": {
+        "skipMinimizedWindows": 1,
+        "wrapAround": 1,
+        "reverseScrollingDirection": 0,
+        "enableMouseWheelCycling": 1,
+        "customScrollRegions": "",
+        "cycleLeftKeyboardShortcut": "Alt+VK_OEM_4",
+        "cycleRightKeyboardShortcut": "Alt+VK_OEM_6",
+        "oldTaskbarOnWin11": 0
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "taskmgr-link-speed",
+      "version": "1.0.0",
+      "name": "Task Manager Show Link Speed",
+      "settings": {
+        "CustomLabelOverrideEnabled": 0,
+        "CustomLabelOverrideText": ""
+      }
+    },
+    {
+      "modId": "windows-11-file-explorer-styler",
+      "version": "1.7.2",
+      "name": "Windows 11 File Explorer Styler",
+      "settings": {
+        "theme": "",
+        "backgroundTranslucentEffect": "",
+        "backgroundTranslucentEffectRegion": "",
+        "styleConstants[0]": "",
+        "controlStyles[0].target": "Microsoft.UI.Xaml.Controls.AppBarButton#backButton",
+        "controlStyles[0].styles[0]": "Margin=0,8,0,0",
+        "controlStyles[0].styles[1]": "Width=37",
+        "controlStyles[1].target": "Microsoft.UI.Xaml.Controls.AppBarButton#forwardButton",
+        "controlStyles[1].styles[0]": "Margin=0,8,0,0",
+        "controlStyles[1].styles[1]": "Width=37",
+        "controlStyles[2].target": "Microsoft.UI.Xaml.Controls.AppBarButton#upButton",
+        "controlStyles[2].styles[0]": "Margin=0,8,0,0",
+        "controlStyles[2].styles[1]": "Width=37",
+        "controlStyles[3].target": "Microsoft.UI.Xaml.Controls.AppBarButton#refreshButton",
+        "controlStyles[3].styles[0]": "Margin=0,8,0,0",
+        "controlStyles[3].styles[1]": "Width=37",
+        "themeResourceVariables[0]": "",
+        "explorerFrameContainerHeight": 0,
+        "xamlDiagnosticsHandling": "alert"
+      }
+    },
+    {
+      "modId": "windows-11-start-menu-styler",
+      "version": "1.8",
+      "name": "Windows 11 Start Menu Styler",
+      "settings": {
+        "theme": "Windows11_Metro10",
+        "disableNewStartMenuLayout": "0",
+        "styleConstants[0]": "",
+        "controlStyles[0].target": "",
+        "controlStyles[0].styles[0]": "",
+        "themeResourceVariables[0]": "",
+        "webContentStyles[0].target": "",
+        "webContentStyles[0].styles[0]": "",
+        "webContentCustomJs": ""
+      }
+    },
+    {
+      "modId": "windows-11-taskbar-styler",
+      "version": "1.11.2",
+      "name": "Windows 11 Taskbar Styler",
+      "settings": {
+        "theme": "",
+        "styleConstants[0]": "",
+        "controlStyles[0].target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Border#BackgroundElement",
+        "controlStyles[0].styles[0]": "Background:=<ImageBrush Stretch=\"Uniform\" ImageSource=\"file:///C:/Windows/OrbWin10.png\" />",
+        "controlStyles[1].target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer#Icon",
+        "controlStyles[1].styles[0]": "Visibility=Collapsed",
+        "themeResourceVariables[0]": "",
+        "clickThroughTaskbar": 0,
+        "xamlDiagnosticsHandling": "alert"
+      },
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "local@desktop-double-click-toggle-icons",
+      "version": "1.0.0",
+      "name": "Double-Click Desktop to Toggle Icons",
+      "source": "// ==WindhawkMod==\r\n// @id              desktop-double-click-toggle-icons\r\n// @name            Double-Click Desktop to Toggle Icons\r\n// @description     Toggles desktop icons by double-clicking empty desktop space.\r\n// @version         1.0.0\r\n// @author          Alchemy\r\n// @github          https://github.com/alchemyyy\r\n// @license         MIT\r\n// @include         explorer.exe\r\n// @compilerOptions -lcomctl32\r\n// ==/WindhawkMod==\r\n\r\n// ==WindhawkModReadme==\r\n/*\r\n# Double-Click Desktop to Toggle Icons\r\n\r\nDouble-click empty desktop space to hide or show the desktop icons. Double-clicking\r\nan icon still opens it normally.\r\n\r\nThe mod subclasses the desktop window instead of installing a global mouse hook and\r\nuses Explorer's native \"Show desktop icons\" command to perform the toggle.\r\n*/\r\n// ==/WindhawkModReadme==\r\n\r\n#include <windows.h>\r\n#include <windowsx.h>\r\n#include <commctrl.h>\r\n#include <windhawk_utils.h>\r\n\r\nnamespace {\r\n\r\nconstexpr wchar_t DESKTOP_VIEW_CLASS[] = L\"SHELLDLL_DefView\";\r\nconstexpr wchar_t DESKTOP_LIST_VIEW_CLASS[] = L\"SysListView32\";\r\nconstexpr wchar_t PROGRAM_MANAGER_CLASS[] = L\"Progman\";\r\nconstexpr wchar_t WORKER_WINDOW_CLASS[] = L\"WorkerW\";\r\nconstexpr WPARAM TOGGLE_DESKTOP_ICONS_COMMAND = 0x7402;\r\n\r\nstruct DoubleClickState {\r\n    bool hasFirstClick;\r\n    DWORD firstClickTime;\r\n    POINT firstClickPoint;\r\n};\r\n\r\nHWND s_desktopViewWindow = nullptr;\r\nDoubleClickState s_doubleClickState{};\r\n\r\nusing CreateWindowExWFunction = decltype(&CreateWindowExW);\r\nCreateWindowExWFunction s_CreateWindowExWOriginal = nullptr;\r\n\r\nbool HasWindowClass(HWND window, const wchar_t* expectedClassName) {\r\n    wchar_t className[32]{};\r\n    return GetClassNameW(window, className, ARRAYSIZE(className)) &&\r\n           lstrcmpW(className, expectedClassName) == 0;\r\n}\r\n\r\nbool IsDesktopView(HWND window) {\r\n    if (!HasWindowClass(window, DESKTOP_VIEW_CLASS)) {\r\n        return false;\r\n    }\r\n\r\n    HWND parentWindow = GetParent(window);\r\n    if (!HasWindowClass(parentWindow, PROGRAM_MANAGER_CLASS) &&\r\n        !HasWindowClass(parentWindow, WORKER_WINDOW_CLASS)) {\r\n        return false;\r\n    }\r\n\r\n    DWORD processID = 0;\r\n    GetWindowThreadProcessId(window, &processID);\r\n    return processID == GetCurrentProcessId();\r\n}\r\n\r\nvoid ToggleDesktopIcons(HWND desktopViewWindow) {\r\n    PostMessageW(desktopViewWindow, WM_COMMAND,\r\n                 TOGGLE_DESKTOP_ICONS_COMMAND, 0);\r\n}\r\n\r\nbool IsSecondClick(LPARAM messageParameter) {\r\n    DWORD clickTime = static_cast<DWORD>(GetMessageTime());\r\n    POINT clickPoint{\r\n        GET_X_LPARAM(messageParameter),\r\n        GET_Y_LPARAM(messageParameter),\r\n    };\r\n\r\n    LONG horizontalDistance = clickPoint.x -\r\n                              s_doubleClickState.firstClickPoint.x;\r\n    LONG verticalDistance = clickPoint.y -\r\n                            s_doubleClickState.firstClickPoint.y;\r\n    if (horizontalDistance < 0) {\r\n        horizontalDistance = -horizontalDistance;\r\n    }\r\n    if (verticalDistance < 0) {\r\n        verticalDistance = -verticalDistance;\r\n    }\r\n\r\n    bool isSecondClick =\r\n        s_doubleClickState.hasFirstClick &&\r\n        clickTime - s_doubleClickState.firstClickTime <=\r\n            GetDoubleClickTime() &&\r\n        horizontalDistance <= GetSystemMetrics(SM_CXDOUBLECLK) / 2 &&\r\n        verticalDistance <= GetSystemMetrics(SM_CYDOUBLECLK) / 2;\r\n\r\n    if (isSecondClick) {\r\n        s_doubleClickState = {};\r\n        return true;\r\n    }\r\n\r\n    s_doubleClickState = {\r\n        true,\r\n        clickTime,\r\n        clickPoint,\r\n    };\r\n    return false;\r\n}\r\n\r\nLRESULT CALLBACK DesktopViewSubclassProc(HWND window,\r\n                                         UINT message,\r\n                                         WPARAM wParam,\r\n                                         LPARAM lParam,\r\n                                         DWORD_PTR) {\r\n    HWND listViewWindow =\r\n        FindWindowExW(window, nullptr, DESKTOP_LIST_VIEW_CLASS, nullptr);\r\n\r\n    if (message == WM_NOTIFY && lParam) {\r\n        const NMHDR* notification =\r\n            reinterpret_cast<const NMHDR*>(lParam);\r\n        if (notification->hwndFrom == listViewWindow &&\r\n            notification->code == NM_DBLCLK) {\r\n            const NMITEMACTIVATE* activation =\r\n                reinterpret_cast<const NMITEMACTIVATE*>(lParam);\r\n            if (activation->iItem == -1) {\r\n                s_doubleClickState = {};\r\n                ToggleDesktopIcons(window);\r\n                return 0;\r\n            }\r\n        }\r\n    }\r\n\r\n    if (message == WM_LBUTTONDOWN && listViewWindow &&\r\n        !IsWindowVisible(listViewWindow) && IsSecondClick(lParam)) {\r\n        ToggleDesktopIcons(window);\r\n        return 0;\r\n    }\r\n\r\n    if (message == WM_NCDESTROY && window == s_desktopViewWindow) {\r\n        s_desktopViewWindow = nullptr;\r\n        s_doubleClickState = {};\r\n    }\r\n\r\n    return DefSubclassProc(window, message, wParam, lParam);\r\n}\r\n\r\nvoid AttachToDesktopView(HWND window) {\r\n    if (window == s_desktopViewWindow || !IsDesktopView(window)) {\r\n        return;\r\n    }\r\n\r\n    if (!WindhawkUtils::SetWindowSubclassFromAnyThread(\r\n            window, DesktopViewSubclassProc, 0)) {\r\n        Wh_Log(L\"Failed to subclass the desktop view\");\r\n        return;\r\n    }\r\n\r\n    s_desktopViewWindow = window;\r\n    s_doubleClickState = {};\r\n}\r\n\r\nBOOL CALLBACK FindDesktopViewCallback(HWND topLevelWindow, LPARAM) {\r\n    if (!HasWindowClass(topLevelWindow, PROGRAM_MANAGER_CLASS) &&\r\n        !HasWindowClass(topLevelWindow, WORKER_WINDOW_CLASS)) {\r\n        return TRUE;\r\n    }\r\n\r\n    HWND desktopViewWindow = FindWindowExW(\r\n        topLevelWindow, nullptr, DESKTOP_VIEW_CLASS, nullptr);\r\n    AttachToDesktopView(desktopViewWindow);\r\n    return s_desktopViewWindow ? FALSE : TRUE;\r\n}\r\n\r\nvoid AttachToExistingDesktopView() {\r\n    if (!s_desktopViewWindow) {\r\n        EnumWindows(FindDesktopViewCallback, 0);\r\n    }\r\n}\r\n\r\nHWND WINAPI CreateWindowExWHook(DWORD extendedStyle,\r\n                                LPCWSTR className,\r\n                                LPCWSTR windowName,\r\n                                DWORD style,\r\n                                int xPosition,\r\n                                int yPosition,\r\n                                int width,\r\n                                int height,\r\n                                HWND parentWindow,\r\n                                HMENU menu,\r\n                                HINSTANCE instance,\r\n                                LPVOID parameter) {\r\n    HWND window = s_CreateWindowExWOriginal(\r\n        extendedStyle, className, windowName, style, xPosition, yPosition,\r\n        width, height, parentWindow, menu, instance, parameter);\r\n    AttachToDesktopView(window);\r\n    return window;\r\n}\r\n\r\n}  // namespace\r\n\r\nBOOL Wh_ModInit() {\r\n    if (!WindhawkUtils::SetFunctionHook(\r\n            CreateWindowExW, CreateWindowExWHook,\r\n            &s_CreateWindowExWOriginal)) {\r\n        Wh_Log(L\"Failed to hook CreateWindowExW\");\r\n        return FALSE;\r\n    }\r\n\r\n    AttachToExistingDesktopView();\r\n    return TRUE;\r\n}\r\n\r\nvoid Wh_ModAfterInit() {\r\n    AttachToExistingDesktopView();\r\n}\r\n\r\nvoid Wh_ModUninit() {\r\n    if (s_desktopViewWindow) {\r\n        WindhawkUtils::RemoveWindowSubclassFromAnyThread(\r\n            s_desktopViewWindow, DesktopViewSubclassProc);\r\n    }\r\n}\r\n",
+      "config": {
+        "disabled": true
+      }
+    },
+    {
+      "modId": "local@explorer-case-sensitive-sort",
+      "version": "0.1",
+      "name": "Explorer Case-Sensitive Name Sort",
+      "source": "// ==WindhawkMod==\r\n// @id              explorer-case-sensitive-sort\r\n// @name            Explorer Case-Sensitive Name Sort\r\n// @description     Sorts File Explorer item names case-sensitively (uppercase before lowercase)\r\n// @version         0.1\r\n// @author          Alchemy\r\n// @include         explorer.exe\r\n// @architecture    x86-64\r\n// @license         MIT\r\n// ==/WindhawkMod==\r\n\r\n// ==WindhawkModReadme==\r\n/*\r\n# Explorer Case-Sensitive Name Sort\r\n\r\nMakes File Explorer sort item names case-sensitively. Names are compared by\r\ncharacter code (ASCII order), so uppercase sorts before lowercase (`Banana`\r\nbefore `apple`). Numbers inside names are still compared by value (`item2`\r\nbefore `item10`), like `LC_ALL=C ls -v`.\r\n\r\nAlready-open folders re-sort on refresh (F5) or when a column header is clicked.\r\n\r\nNot covered: the `NoStrCmpLogical` policy, and views whose order comes from the\r\nsearch indexer.\r\n*/\r\n// ==/WindhawkModReadme==\r\n\r\n#include <windows.h>\r\n\r\n#include <atomic>\r\n\r\n#define WINDOWS_STORAGE_MODULE_NAME L\"windows.storage.dll\"\r\n\r\nusing StrCmpLogicalW_t = int(WINAPI*)(PCWSTR, PCWSTR);\r\nstatic StrCmpLogicalW_t s_strCmpLogicalWOriginal;\r\n\r\nstatic std::atomic<ULONG_PTR> s_windowsStorageStart;\r\nstatic std::atomic<ULONG_PTR> s_windowsStorageEnd;\r\n\r\n// Caches the windows.storage.dll image range, returns false until the module is loaded\r\nstatic bool ResolveWindowsStorageRange() {\r\n    if (s_windowsStorageStart.load(std::memory_order_acquire)) {\r\n        return true;\r\n    }\r\n\r\n    HMODULE moduleHandle = GetModuleHandleW(WINDOWS_STORAGE_MODULE_NAME);\r\n    if (!moduleHandle) {\r\n        return false;\r\n    }\r\n\r\n    const BYTE* imageBase = reinterpret_cast<const BYTE*>(moduleHandle);\r\n    const IMAGE_DOS_HEADER* dosHeader = reinterpret_cast<const IMAGE_DOS_HEADER*>(imageBase);\r\n    const IMAGE_NT_HEADERS* ntHeaders = reinterpret_cast<const IMAGE_NT_HEADERS*>(imageBase + dosHeader->e_lfanew);\r\n    ULONG_PTR imageStart = reinterpret_cast<ULONG_PTR>(imageBase);\r\n\r\n    s_windowsStorageEnd.store(imageStart + ntHeaders->OptionalHeader.SizeOfImage, std::memory_order_relaxed);\r\n    s_windowsStorageStart.store(imageStart, std::memory_order_release);\r\n    return true;\r\n}\r\n\r\nstatic bool IsWindowsStorageAddress(const void* address) {\r\n    if (!ResolveWindowsStorageRange()) {\r\n        return false;\r\n    }\r\n\r\n    ULONG_PTR value = reinterpret_cast<ULONG_PTR>(address);\r\n    return value >= s_windowsStorageStart.load(std::memory_order_acquire) &&\r\n           value < s_windowsStorageEnd.load(std::memory_order_relaxed);\r\n}\r\n\r\nstatic bool IsAsciiDigit(WCHAR character) {\r\n    return character >= L'0' && character <= L'9';\r\n}\r\n\r\nstatic int CompareOrdinal(PCWSTR left, PCWSTR right) {\r\n    while (*left && *left == *right) {\r\n        left++;\r\n        right++;\r\n    }\r\n\r\n    if (*left == *right) {\r\n        return 0;\r\n    }\r\n    return *left < *right ? -1 : 1;\r\n}\r\n\r\n// Logical compare like StrCmpLogicalW, but case-sensitive\r\n// Digit runs compare by numeric value, all other characters compare by UTF-16 code unit\r\nstatic int CompareLogicalCaseSensitive(PCWSTR left, PCWSTR right) {\r\n    PCWSTR leftCursor = left;\r\n    PCWSTR rightCursor = right;\r\n\r\n    while (*leftCursor && *rightCursor) {\r\n        if (!IsAsciiDigit(*leftCursor) || !IsAsciiDigit(*rightCursor)) {\r\n            if (*leftCursor != *rightCursor) {\r\n                return *leftCursor < *rightCursor ? -1 : 1;\r\n            }\r\n            leftCursor++;\r\n            rightCursor++;\r\n            continue;\r\n        }\r\n\r\n        // Numeric run: skip leading zeros, then longer run wins, then first differing digit wins\r\n        while (*leftCursor == L'0') {\r\n            leftCursor++;\r\n        }\r\n        while (*rightCursor == L'0') {\r\n            rightCursor++;\r\n        }\r\n\r\n        PCWSTR leftRunEnd = leftCursor;\r\n        while (IsAsciiDigit(*leftRunEnd)) {\r\n            leftRunEnd++;\r\n        }\r\n        PCWSTR rightRunEnd = rightCursor;\r\n        while (IsAsciiDigit(*rightRunEnd)) {\r\n            rightRunEnd++;\r\n        }\r\n\r\n        ptrdiff_t leftRunLength = leftRunEnd - leftCursor;\r\n        ptrdiff_t rightRunLength = rightRunEnd - rightCursor;\r\n        if (leftRunLength != rightRunLength) {\r\n            return leftRunLength < rightRunLength ? -1 : 1;\r\n        }\r\n\r\n        for (ptrdiff_t digitIndex = 0; digitIndex < leftRunLength; digitIndex++) {\r\n            if (leftCursor[digitIndex] != rightCursor[digitIndex]) {\r\n                return leftCursor[digitIndex] < rightCursor[digitIndex] ? -1 : 1;\r\n            }\r\n        }\r\n\r\n        leftCursor = leftRunEnd;\r\n        rightCursor = rightRunEnd;\r\n    }\r\n\r\n    if (*leftCursor || *rightCursor) {\r\n        return *leftCursor ? 1 : -1;\r\n    }\r\n\r\n    // Equal apart from leading zeros, keep the order total\r\n    return CompareOrdinal(left, right);\r\n}\r\n\r\n// All four StrCmpLogicalW call sites in windows.storage.dll (build 26100) compare item names:\r\n// CFSFolder::CompareIDs, DVCompareColumns, StrCmpLogicalRestricted, CEnumFiles::CFileInformationClassSorter::Compare\r\n// Other callers, such as PropVariantCompareEx for non-name columns, keep the original comparison\r\nstatic int WINAPI StrCmpLogicalW_Hook(PCWSTR left, PCWSTR right) {\r\n    void* returnAddress = __builtin_return_address(0);\r\n    if (!left || !right || !IsWindowsStorageAddress(returnAddress)) {\r\n        return s_strCmpLogicalWOriginal(left, right);\r\n    }\r\n\r\n    return CompareLogicalCaseSensitive(left, right);\r\n}\r\n\r\nBOOL Wh_ModInit() {\r\n    Wh_Log(L\"Init\");\r\n\r\n    HMODULE kernelBaseModule = GetModuleHandleW(L\"kernelbase.dll\");\r\n    if (!kernelBaseModule) {\r\n        Wh_Log(L\"kernelbase.dll not loaded\");\r\n        return FALSE;\r\n    }\r\n\r\n    void* strCmpLogicalW = reinterpret_cast<void*>(GetProcAddress(kernelBaseModule, \"StrCmpLogicalW\"));\r\n    if (!strCmpLogicalW) {\r\n        Wh_Log(L\"StrCmpLogicalW not found\");\r\n        return FALSE;\r\n    }\r\n\r\n    if (!Wh_SetFunctionHook(strCmpLogicalW, reinterpret_cast<void*>(StrCmpLogicalW_Hook),\r\n                            reinterpret_cast<void**>(&s_strCmpLogicalWOriginal))) {\r\n        Wh_Log(L\"Hooking StrCmpLogicalW failed\");\r\n        return FALSE;\r\n    }\r\n\r\n    Wh_Log(L\"windows.storage.dll range resolved: %d\", ResolveWindowsStorageRange());\r\n    return TRUE;\r\n}\r\n\r\nvoid Wh_ModUninit() {\r\n    Wh_Log(L\"Uninit\");\r\n}\r\n"
+    }
+  ]
+}
